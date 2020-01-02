@@ -19,7 +19,6 @@
     <!-- Place your kit's code here -->
     <!-- <script src="https://kit.fontawesome.com/35916db2f5.js" crossorigin="anonymous"></script> -->
     <!--load all styles -->
-    <!--load all styles -->
     <title>Syed Daniyal Ali</title>
 </head>
 
@@ -72,7 +71,7 @@
         </div>
     </div> -->
 
-<div id="mysidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="flaticon-close-button"></i></a> <img class="nav-logo logosize" src="images/logo/3.png" alt="image">
+<!-- <div id="mysidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="flaticon-close-button"></i></a> <img class="nav-logo logosize" src="images/logo/3.png" alt="image">
     <ul id="menu">
         <li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
         <li data-menuanchor="page2"><a href="#page2">About</a></li>
@@ -84,12 +83,13 @@
         <li data-menuanchor="page8"><a href="#page8">Testimonial</a></li>
         <li data-menuanchor="page9"><a href="#page9">Contact</a></li>
     </ul>
-</div>
+</div> -->
 
 <div class="sidebar bg_deepblack">
     <div class="logo text-center">
         <a href="#page1"><img class="nav-logo logosize" src="images/logo/3.png" alt="logo"></a>
-    </div> <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
     <div class="socal_media mt_60">
         <ul>
             <li><a href="https://www.facebook.com/syeddaniyalali30" target="top"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -102,7 +102,7 @@
 </div>
 
 
-<div class="contact_massage bg_deepblack"> <a href="#page9"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+<!-- <div class="contact_massage bg_deepblack"> <a href="#page9"><i class="fa fa-envelope" aria-hidden="true"></i></a></div> -->
 
 <div id="pagepiling">
     <div class="pagegilling-mani-banner section bg_white">
@@ -112,7 +112,9 @@
                     <div class="col-md-12 col-lg-12 home-content text-left">
                         <div class="mainbanner_content"> <span class="pb_5 banner_title color_white">I Am Syed Daniyal Ali!</span>
                             <h1 class="cd-headline clip is-full-width text-uppercase"> <span class="color_white">I am a</span> <span class="cd-words-wrapper color_default"> <b class="is-visible">Android App Developer.</b> <b>Website Developer.</b> <b>Freelancer.</b> </span></h1>
-                            <p class="color_white mb_30">My Goal is to provide best quality robust softwares to everyone around the world.</p> <a class="btn btn-default" href="#">Download CV</a></div>
+                            <p class="color_white mb_30">My Goal is to provide best quality robust softwares to everyone around the world.</p>
+                            <!-- <a class="btn btn-default" href="#">Download CV</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -819,7 +821,7 @@
                     <div class="col-md-12 col-lg-12">
                         <div class="main_title pb_60">
                             <h2 class="title color_white">Contact</h2>
-                            <p class="mt_15 color_lightgray">Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit nulla dolor habitant.</p>
+                            <p class="mt_15 color_lightgray">In search of reliable products? Yes u r at the right place contact us now.</p>
                         </div>
                     </div>
                 </div>
@@ -846,19 +848,19 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-8">
-                        <form class="form contact_message pb_60" id="contact-form" action="mailto:SyedDaniyalAli33@gmail.com" method="post">
+                        <form class="form contact_message pb_60" id="contact-form" onsubmit="return false;">
                             <div class="row">
                                 <div class="col-md-6 col-lg-6">
-                                    <div class="form-group"> <input class="form-control bg_black" type="text" name="name" placeholder="Your Name" /></div>
+                                    <div class="form-group"> <input class="form-control bg_black" type="text" id="name" name="name" placeholder="Your Name" /></div>
                                 </div>
                                 <div class="col-md-6 col-lg-6">
-                                    <div class="form-group"> <input class="form-control bg_black" type="email" name="email" placeholder="Email Address" /></div>
+                                    <div class="form-group"> <input class="form-control bg_black" type="email" id="email" name="email" placeholder="Email Address" /></div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
-                                    <div class="form-group"> <input class="form-control bg_black" type="text" name="subject" placeholder="Subject" /></div>
+                                    <div class="form-group"> <input class="form-control bg_black" type="text" id="subject" name="subject" placeholder="Subject" /></div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
-                                    <div class="form-group"><textarea class="form-control bg_black" name="message" rows="7" placeholder="Message"></textarea></div>
+                                    <div class="form-group"><textarea class="form-control bg_black" id="message" name="message" rows="7" placeholder="Message"></textarea></div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group"> <input class="btn btn-default" id="send" value="Send Massage" type="submit" /></div>
@@ -901,7 +903,12 @@
                                             <p class="color_white">Want to get latest updates? then don't forget to send your email.
                                             </p>
                                             <div class="subscribe mt_30">
-                                                <div class="input-group"> <input type="email" class="form-control" placeholder="Enter your email"> <button class="btn btn-default" type="submit">Send</button></div>
+                                                <form action="mailto:SyedDaniyalAli33@gmail.com">
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control" placeholder="Enter your email"> <button class="btn btn-default" type="submit">Send</button>
+
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -917,6 +924,7 @@
         </div>
     </div>
 </div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -925,6 +933,7 @@
 <script src="js/app.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
 <script src="js/custom.js"></script>
+
 <script>
     var deleteLog = false;
     $(document).ready(function() {
@@ -945,15 +954,33 @@
     }
 </script>
 
+<!--Firebase-->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+<!-- <script defer src="js/custom.js"></script> -->
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+
+<script>
+    // Your web app 's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDj9fxHXzQ-sV644JRv4MdeTMVnw_5Gdys",
+        authDomain: "syeddaniyalali-portfolio.firebaseapp.com",
+        databaseURL: "https://syeddaniyalali-portfolio.firebaseio.com",
+        projectId: "syeddaniyalali-portfolio",
+        storageBucket: "syeddaniyalali-portfolio.appspot.com",
+        messagingSenderId: "895661918991",
+        appId: "1:895661918991:web:5d3307cefba8a312fa0c7a",
+        measurementId: "G-86WK7ERYPT"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    var db = firebase.firestore();
+</script>
+
 
 </body>
 

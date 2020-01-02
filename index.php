@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Personal Portfolio of Syed Daniyal Ali">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
+    <meta name="author" content="Syed Daniyal Ali">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css" id="color-change">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/3.png">
+    <!-- Place your kit's code here -->
+    <!-- <script src="https://kit.fontawesome.com/35916db2f5.js" crossorigin="anonymous"></script> -->
+    <!--load all styles -->
+    <title>Syed Daniyal Ali</title>
+</head>
+
+<!-- <body id="top" class="page-load">
+    <div class="preloader">
+        <div class="lds-css ng-scope">
+            <div class="lds-spinner" style="100%;height:100%">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div> -->
+<!-- <div class="color-panel">
+        <div class="on-panel color_white bg_primary">
+            <div class="text-center icon-spinner"> <i class="fa fa-cog fa-spin fa-3x fa-fw"></i></div>
+        </div>
+        <div class="panel-box"> <span class="panel-title">Theme Colors</span>
+            <ul class="color-box">
+                <li class="default" data-name="default" data-path="css/color.css" data-image="images/logo/29.png" data-target="images/logo/29.png"></li>
+                <li class="color_2" data-name="color_2" data-path="css/color/color-1.css" data-image="images/logo/30.png" data-target="images/logo/30.png"></li>
+                <li class="color_3" data-name="color_3" data-path="css/color/color-2.css" data-image="images/logo/31.png" data-target="images/logo/31.png"></li>
+                <li class="color_4" data-name="color_4" data-path="css/color/color-3.css" data-image="images/logo/32.png" data-target="images/logo/32.png"></li>
+                <li class="color_5" data-name="color_5" data-path="css/color/color-4.css" data-image="images/logo/33.png" data-target="images/logo/33.png"></li>
+                <li class="color_6" data-name="color_6" data-path="css/color/color-5.css" data-image="images/logo/34.png" data-target="images/logo/34.png"></li>
+                <li class="color_7" data-name="color_7" data-path="css/color/color-6.css" data-image="images/logo/35.png" data-target="images/logo/35.png"></li>
+                <li class="color_8" data-name="color_8" data-path="css/color/color-7.css" data-image="images/logo/36.png" data-target="images/logo/36.png"></li>
+                <li class="color_9" data-name="color_9" data-path="css/color/color-8.css" data-image="images/logo/37.png" data-target="images/logo/37.png"></li>
+                <li class="color_10" data-name="color_10" data-path="css/color/color-9.css" data-image="images/logo/38.png" data-target="images/logo/38.png"></li>
+                <li class="color_11" data-name="color_11" data-path="css/color/color-10.css" data-image="images/logo/39.png" data-target="images/logo/39.png"></li>
+                <li class="color_12" data-name="color_12" data-path="css/color/color-11.css" data-image="images/logo/40.png" data-target="images/logo/40.png"></li>
+                <li class="color_13" data-name="color_13" data-path="css/color/color-12.css" data-image="images/logo/41.png" data-target="images/logo/41.png"></li>
+                <li class="color_14" data-name="color_14" data-path="css/color/color-13.css" data-image="images/logo/42.png" data-target="images/logo/42.png"></li>
+            </ul>
+        </div>
+        <div class="template_style"> <span class="layout_title">Template Style</span>
+            <ul>
+                <li><a class="btn_link" href="index-1.html" target="blank">White Version</a></li>
+                <li><a class="btn_link" href="index-2.html" target="blank">Black Version</a></li>
+            </ul>
+        </div>
+    </div> -->
+
+<!-- <div id="mysidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="flaticon-close-button"></i></a> <img class="nav-logo logosize" src="images/logo/3.png" alt="image">
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
+        <li data-menuanchor="page2"><a href="#page2">About</a></li>
+        <li data-menuanchor="page3"><a href="#page3">Resume</a></li>
+        <li data-menuanchor="page4"><a href="#page4">Services</a></li>
+        <li data-menuanchor="page5"><a href="#page5">Portfolio</a></li>
+        <li data-menuanchor="page6"><a href="#page6">Pricing</a></li>
+        <li data-menuanchor="page7"><a href="#page7">Team</a></li>
+        <li data-menuanchor="page8"><a href="#page8">Testimonial</a></li>
+        <li data-menuanchor="page9"><a href="#page9">Contact</a></li>
+    </ul>
+</div> -->
+
+<div class="sidebar bg_deepblack">
+    <div class="logo text-center">
+        <a href="#page1"><img class="nav-logo logosize" src="images/logo/3.png" alt="logo"></a>
+    </div>
+    <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
+    <div class="socal_media mt_60">
+        <ul>
+            <li><a href="https://www.facebook.com/syeddaniyalali30" target="top"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/daniyalchatting" target="top"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/SyedDaniyalAli" target="top"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://linkedin.com/in/syeddaniyalali" target="top"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://instagram.com/syeddaniyalali30" target="top"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- <div class="contact_massage bg_deepblack"> <a href="#page9"><i class="fa fa-envelope" aria-hidden="true"></i></a></div> -->
+
+<div id="pagepiling">
+    <div class="pagegilling-mani-banner section bg_white">
+        <div id="particles-js" class="banner_image background10">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-12 col-lg-12 home-content text-left">
+                        <div class="mainbanner_content"> <span class="pb_5 banner_title color_white">I Am Syed Daniyal Ali!</span>
+                            <h1 class="cd-headline clip is-full-width text-uppercase"> <span class="color_white">I am a</span> <span class="cd-words-wrapper color_default"> <b class="is-visible">Android App Developer.</b> <b>Website Developer.</b> <b>Freelancer.</b> </span></h1>
+                            <p class="color_white mb_30">My Goal is to provide best quality robust softwares to everyone around the world.</p>
+                            <!-- <a class="btn btn-default" href="#">Download CV</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section bg_black pp-scrollable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about2">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <div class="overlay_one"><img src="images/about/sda_about_dark.jpg" alt="image"></div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <div class="about_myself pb_60">
+                                    <div class="main_title my_60">
+                                        <h2 class="title color_white">About Me</h2>
+                                        <p class="mt_15 color_lightgray">I am specialist in Android Development with (FireBase and PHP)<br><br>However i can work in these fields:</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="myself color_lightgray">
+                                                <p>
+
+                                                    <li>Rust Programming</li>
+                                                    <li> Embedded Systems</li>
+                                                    <li> Git Version Controlling</li>
+                                                    <li> C language Programming</li>
+                                                    <li> Java Application Development</li>
+
+                                                </p>
+                                                <p class="pt_30">
+                                                    <li>C# Development</li>
+                                                    <li>Database
+                                                        <ol>
+                                                            <li>SQL</li>
+                                                            <li>Firebase</li>
+                                                            <li>My SQL</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li> Full Stack website Development</li>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="personal_info color_lightgray">
+                                                <ul>
+                                                    <li><span class="color_secondery">Name :</span> Syed Daniyal Ali</li>
+                                                    <li><span class="color_secondery">Email :</span> SyedDaniyalAli33@gmail.com</li>
+                                                    <li><span class="color_secondery">Phone :</span> +92 3447724318</li>
+                                                    <li><span class="color_secondery">Date of Birth :</span> 2 March 1999</li>
+                                                    <li><span class="color_secondery">Blood Group :</span> A+</li>
+                                                    <li><span class="color_secondery">Address :</span> Shamsi Society, MalirHalt Karachi.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="education" class="section bg_black pp-scrollable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="education_experience ml_105 color_lightgray">
+                        <div class="main_title my_60">
+                            <h2 class="title color_white">Education & Achivements</h2>
+                            <p class="mt_15 color_lightgray">I have 2 years of Experience to develop professional Andrdoid Apps</p>
+                        </div>
+                        <ul class="nav nav-pills pb_60" id="pills-tab" role="tablist">
+                            <li class="nav-item"> <a class="btn btn-default active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Achivements</a></li>
+                            <li class="nav-item mx_10"> <a class="btn btn-default" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Education</a></li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">01.</h1>
+                                            <h4 class="color_white font-weight-bold">First position from “Fast University”</h4> <span class="color_secondery">21 March 2019</span></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>I got first position in (Android Development) from Fast University,Karachi, Pakistan.</p>
+                                            <br>Our goal was to create an android application named <b>"NEWS Alert"</b> in which a authenticated person can check updated NEWS in three sections.</p>
+                                            <li>Today NEWS</li>
+                                            <li>Daily Updated</li>
+                                            <li>Latest Alerts</li>
+                                            <p>We provieded these updates in "RecyclerView" which was fetched from Firebase Database</p>
+                                            <p>The authentication also done by "Firebase Authentication" </p>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4"> <img src="images/education/fast_uni3.jpg" alt="image"></div>
+                                    </div>
+                                </div>
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Got first position in (Android Development) in Aptech's Techon Competition,Karachi, Pakistan.</p>
+                                            <br>Our Mission was to develop an Android Application named "Route Alert" in which we have two roles:</p>
+                                            <li>Police Department</li>
+                                            <li>Publicaly Users</li>
+                                            <p>Where we had create php rest apis to upload data and fetch data of both roles.
+                                                <br>-I accomplished my goal on time (5 Days target) and got 300$ in that competition.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4"> <img src="images/education/aptech_techwiz.jpg" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">02.</h1>
+                                            <h4 class="color_white font-weight-bold">1st Runner-up from “Aptech” in Global Competition</h4> <span class="color_secondery">10 April 2019</span></div>
+                                    </div>
+                                </div>
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4"> <img src="images/education/techon.jpg" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">03.</h1>
+                                            <h4 class="color_white font-weight-bold">1st position in Karachi from “Aptech Techon Competition”</h4> <span class="color_secondery">30 September 2019</span></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Got 2nd position in (Android Development) in Aptech Techon held in "Rj Mall" Karachi, Pakistan.
+                                                <br>Our Mission was to develop an Android Application named "Garbage Collector" in which multiple people can:</p>
+                                            <li>Show main dusters in town on a map</li>
+                                            <li>Call for a grabage collector to collect grabage</li>
+                                            <li>Point a location on a map to collect garbage from there</li>
+                                            <p>We use Firebase Database to upload data and fetch data from database.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">04.</h1>
+                                            <h4 class="color_white font-weight-bold">1st position from “Fast University” in Pakistan whole competition</h4> <span class="color_secondery">21 April 2019</span></div>
+                                        <div class="col-md-12 col-lg-4"> <img src="images/education/iqra.jpg" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Got 2nd position in (Android Development) in "Ecompetencia" competition, Karachi, Pakistan.</p>
+                                            <br>Our project was to develop an Android Application named "Quiz App" in which we have two roles:</p>
+                                            <li>4 Quiz Players</li>
+                                            <li>1 Quiz Maker</li>
+                                            <p>We used "SQL Lite" to store locally data in phone to make it synchornizable between 4 different devices we use wifi connectivity to send data and fetch data of all players.
+                                                <br>-I accomplished my goal on time and got 10K cash price in that competition.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div style="background-color: white;" class="col-md-12 col-lg-4"> <img src="images/education/indus_uni_logo.png" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Location:<br>Indus University (gulshan campus), Karachi, Pakistan.</p><br>
+                                            <p>Couse Includes:<br>Securing the Internet of Things, Security Management, Software Project Management, Software Quality Assurance, Software Risk Management and much more...</p><br>
+                                            <p>The course is in process 4th semester is about to complete.</p>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">01.</h1>
+                                            <h4 class="color_white font-weight-bold">Bachelor of science in “Computer Science”</h4> <span class="color_secondery">2018 - continue...</span></div>
+                                    </div>
+                                </div>
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">02.</h1>
+                                            <h4 class="color_white font-weight-bold">Complete course “Accp pro”</h4> <span class="color_secondery">2016 - 2019</span></div>
+                                        <div style="background-color: white;" class="col-md-12 col-lg-4"> <img src="images/education/aptech.png" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Location:<br>Aptech (metro star Gate campus), Karachi, Pakistan.</p><br>
+                                            <p>Aptech Certified Computer Professional is the best career path for anyone looking to make a career in the I.T. industry. A one of a kind curriculum in Pakistan, designed to turn any willing student into a market-ready
+                                                I.T. Professional.</p><br>
+                                            <p>I did 4 years complete program named "Accp Pro" from Aptech Pakistan which help me to workd in any kind of Software Development projects.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Location:<br>Jamia Milia govt. degree college, Malir, Karachi, Pakistan.</p><br>
+                                            <p>Govt. Jamia Millia College was established by Dr. Mehmoodul Hussain. He was brother of Zakir Hussain who established Jamia Millia Islamia, Dehli.<br> Jamia Millia developed itself as an academic community and
+                                                a center of Educational, social and cultural activities and steadily gained reputation as a high Class well known institution.
+                                                <br> Students of the institution achieved higher ranks not only in Board and University examinations but in practical life also they were never behind others , Specially, in their zest for field work and
+                                                community services.
+                                                <br><br> I did 2 years Intermidiate from there which helped me to further study higher Education of Bachelors.</p>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">03.</h1>
+                                            <h4 class="color_white font-weight-bold">Intermidiate from “jamia Milia govt. collage”</h4> <span class="color_secondery">2016 - 2018</span></div>
+                                        <div class="col-md-12 col-lg-4"> <img src="images/education/JamiaMillia_logo.jpeg" alt="image"></div>
+                                    </div>
+                                </div>
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Location:<br>Vision-IT Malirhalt, Karachi, Pakistan.</p><br>
+                                            <p>Vision IT Software House, Computer & English Language Institute has been providing quality education and application development since 1995. It is registered by Sindh Board Of Technical Education. We can say
+                                                it proudly I.T. batches completed succesfully so far. Besides all this also offering professional & job oriented courses under the supervision of experienced and professional teachers.We have got one more
+                                                acheivment of No.1 IT institute in Karachi. We are very thankfull from the bottom of our heart to all our well wishers specially our students & our responsible teachers because of their cooperation, support
+                                                and loyality. We have been able to make such marvelous progress.</p><br>
+                                            <p>I did 1 year program from there which helped me to get know how about computer and there future scope.</p>
+                                        </div>
+                                        <div style="background-color: white;" class="col-md-12 col-lg-4"> <img src="images/education/vision_it.jpeg" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">04.</h1>
+                                            <h4 class="color_white font-weight-bold">Complete course of CIT from “Vision-IT”</h4> <span class="color_secondery">2014 - 2015</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div style="background-color: white;" class="col-md-12 col-lg-4"> <img src="images/education/speciess_school.jpg" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">05.</h1>
+                                            <h4 class="color_white font-weight-bold">Secondary Education & Matriculation from “Speciss Higher Secondary School”</h4> <span class="color_secondery">2008 - 2015</span>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Location:<br>Speciss Higher Secondary School, Malirhalt, Karachi, Pakistan.</p><br>
+                                            <p>
+                                                Speciss Public School was established in 1992 in Rafah-e-Aam Society. For the last 24 years the school has sponsored educational change, opportunity, achievement, excellence and excitement across schools, communities, towns and cities through its student
+                                                centered education system. Speciss Higher Secondary today is beyond education and schooling; it is changing the national education paradigm and landscape through its award winning curriculum, beyond the
+                                                classroom teaching and learning initiatives, teacher training programs, qualifications, results, achievements; thus promoting social change and community re-engineering.
+                                            </p><br>
+                                            <p>I did Secondary Education & Matriculation from there which helped me to get admission for Intermidiate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company pb_60">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4">
+                                            <h1 class="color_lightgray font-weight-bold">06.</h1>
+                                            <h4 class="color_white font-weight-bold">Primary Education from “The Vision School”</h4> <span class="color_secondery">2002 - 2008</span>
+                                        </div>
+                                        <div style="background-color: white;" class="col-md-12 col-lg-4"> <img src="images/education/the_vision_logo.jpeg" alt="image"></div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <p>Location:<br>The Vision School, Shah Faisal Town, Karachi, Pakistan.</p><br>
+                                            <p>
+                                                Established in Karachi in 1978, The Vision School is today one of the largest private school networks in Pakistan with branches in all the major cities across the country. It currently has 153 schools in 49 cities with over 150,000 students in 500+ owned
+                                                and franchised schools. While its Head Office is in Lahore, its Regional Offices support a network of branches throughout Pakistan and overseas. The Vision School offers world-class education right here
+                                                in Pakistan. Established under the aegis of The Vision School, it is committed to providing an ideal learning environment for your child, so that they are not left behind in this rapidly-evolving world.
+                                                We provide quality education from kindergarten right up till Matriculation, in efficient and well-organised schools.
+                                            </p><br>
+                                            <p>I did Primary Education from there which helped me to get admission for Secondary Education.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg_deepblack">
+                <div class="col-md-12 col-lg-12">
+                    <div class="video my_60">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-7">
+                                <div class="video_content ml_105">
+                                    <h2 class="color_default">My project exhibition video</h2>
+                                    <p class="color_white">This is my project exhibition video in which i introduce my self and the concept of my project why i decided to create this project.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-5">
+                                <div class="personal_video"> <img src="images/video.jpg" alt="image">
+                                    <a class="video-popup" href="https://www.facebook.com/AptechMetro/videos/327520511536677/?__xts__[0]=68.ARAVTKx_MuWPRGLzqBRggcFscqH9di8ugXgcEEYNAtzVRwjmdgFbJujUeuqPYJpKvH8DIj8UwPrfjPv96DCzmkH46oTAdHf4jTRbLe8o65Kcr1QgXykTpRjwS2DcS_J3pjjKY1DFVga58kVg0vs8ZyFO_WNXBBWK2AB4upi-KM_GtAH7Q58y6EOm-b-6pum4yk0g-by51nIquL4CzGi57htsaJ2uwpSIGQsYaCHthWmnntSLjfy6deoafQo-9U2wcO-eamT_m1N8_25sfyJFMXIoD-vBoj2HoHpLOdX65oyYO0k7NHpeEc6EIzMqLrv8Jy13MPZmoT1hbQOWgfwhZBzB7cxq_CUofw&__tn__=H-R"
+                                        title="video popup"> <i class="fa fa-play" aria-hidden="true"></i></a>
+                                    <div class="loader xy-center">
+                                        <div class="loader-inner ball-scale-multiple">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services=================================================================================================================== -->
+    <div id="services" class="section bg_black pp-scrollable">
+        <div class="container">
+            <div class="services my_60">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="main_title pb_60">
+                            <h2 class="title color_white">Services</h2>
+                            <p class="mt_15 color_lightgray">I can provide u a service that u will come back to me for your next work (InshaAllah).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item owl-carousel">
+                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-android"></span></div>
+                        <h3 class="font-weight-bold color_white">Android Development</h3>
+                        <p>To develop an Application for you it's the best idea to meetup to ask your perfect requirment.</p>
+                    </div>
+                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-programming"></span></div>
+                        <h3 class="font-weight-bold color_white">Web Development</h3>
+                        <p>Developing a Website for you it's the best to meetup as your perfect requirments of dreams.</p>
+                    </div>
+                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-website-design-symbol"></span></div>
+                        <h3 class="font-weight-bold color_white">Web Design</h3>
+                        <p>We will provide the best ever eligant designed website beyond from your throughs and ideas.</p>
+                    </div>
+                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-connectdevelop"></span></div>
+                        <h3 class="font-weight-bold color_white">Home Automation</h3>
+                        <p>We can automate your home with the essential power of IOT devices with in some days.</p>
+                    </div>
+                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-laptop"></span></div>
+                        <h3 class="font-weight-bold color_white">Laptops and PCs</h3>
+                        <p>Wanna laptop, pcs or accessories? no worries we will provide u the best new or used in Pakistan.</p>
+                    </div>
+                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-image"></span></div>
+                        <h3 class="font-weight-bold color_white">Branding Logos</h3>
+                        <p>Want to start your brand or a new business then u must in search of eligant logo, we will create for you!.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="portfolio" class="section bg_black pp-scrollable">
+        <div class="container">
+            <div class="portfolio2 my_60">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="main_title pb_60">
+                            <h2 class="title color_white">My little gallery</h2>
+                            <p class="mt_15 color_lightgray">Some special pictures.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                        <div class="my_portfolio" id="tab-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="filters mb_30 w-100 color_lightgray">
+                                        <ul class="filter-tabs d-inline-block">
+                                            <li class="active filter" data-role="button" data-filter="all">All</li>
+                                            <li class="filter" data-role="button" data-filter=".design">Web Design</li>
+                                            <li class="filter" data-role="button" data-filter=".wordpress">Wordpress</li>
+                                            <li class="filter" data-role="button" data-filter=".development">Web Development</li>
+                                            <li class="filter" data-role="button" data-filter=".branding">Branding</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-list">
+                                <div class="portfolio-items">
+                                    <div class="row">
+                                        <div class="column mix mix_all graphic development wordpress mb_30 col-md-4 col-lg-4">
+                                            <div class="default-portfolio-item">
+                                                <a href="images/portfolio/01.jpg" data-fancybox="gallery"> <img src="images/portfolio/01.jpg" alt="image" />
+                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                        <div class="tag">
+                                                            <ul>
+                                                                <li>Web Development,</li>
+                                                                <li>wordpress</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column mix mix_all graphic branding mb_30 col-md-4 col-lg-4">
+                                            <div class="default-portfolio-item">
+                                                <a href="images/portfolio/02.jpg" data-fancybox="gallery"> <img src="images/portfolio/02.jpg" alt="image" />
+                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                        <div class="tag">
+                                                            <ul>
+                                                                <li>Branding,</li>
+                                                                <li>Wordpress</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column mix mix_all design wordpress development mb_30 col-md-4 col-lg-4">
+                                            <div class="default-portfolio-item">
+                                                <a href="images/portfolio/03.jpg" data-fancybox="gallery"> <img src="images/portfolio/03.jpg" alt="image" />
+                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                        <div class="tag">
+                                                            <ul>
+                                                                <li>Web Design,</li>
+                                                                <li>Web Development</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column mix mix_all graphic wordpress branding mb_30 col-md-4 col-lg-4">
+                                            <div class="default-portfolio-item">
+                                                <a href="images/portfolio/04.jpg" data-fancybox="gallery"> <img src="images/portfolio/04.jpg" alt="image" />
+                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                        <div class="tag">
+                                                            <ul>
+                                                                <li>Branding,</li>
+                                                                <li>wordpress</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column mix mix_all graphic design branding mb_30 col-md-4 col-lg-4">
+                                            <div class="default-portfolio-item">
+                                                <a href="images/portfolio/05.jpg" data-fancybox="gallery"> <img src="images/portfolio/05.jpg" alt="image" />
+                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                        <div class="tag">
+                                                            <ul>
+                                                                <li>Web Design,</li>
+                                                                <li>wordpress</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column mix mix_all development wordpress design mb_30 col-md-4 col-lg-4">
+                                            <div class="default-portfolio-item">
+                                                <a href="images/portfolio/06.jpg" data-fancybox="gallery"> <img src="images/portfolio/06.jpg" alt="image" />
+                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                        <div class="tag">
+                                                            <ul>
+                                                                <li>Web Design,</li>
+                                                                <li>Web Development</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="pricing" class="section bg_black pp-scrollable">
+        <div class="container">
+            <div class="pricing my_60">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="main_title pb_60">
+                            <h2 class="title color_white">Pricing</h2>
+                            <p class="mt_15 color_lightgray">Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit nulla dolor habitant.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="price_table">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="table text-center bg_deepblack color_secondery">
+                                        <h4 class="color_white">Website Design</h4>
+                                        <h1 class="color_default font-weight-bold"><sup>$</sup> 299</h1>
+                                        <h5 class="color_lightgray">Per Year</h5>
+                                        <div class="list">
+                                            <ul>
+                                                <li>One Website Design</li>
+                                                <li>One PSD Design</li>
+                                                <li>Seo</li>
+                                                <li>Responsive Design</li>
+                                                <li>Free Google Fonts</li>
+                                                <li>Free Font Awesome Icon</li>
+                                                <li>Free Flat Icom</li>
+                                            </ul>
+                                        </div> <a class="btn btn-default w-100 mt_15" href="#">Start Now</a></div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="table text-center bg_deepblack color_secondery">
+                                        <h4 class="color_white">Web Development</h4>
+                                        <h1 class="color_default font-weight-bold"><sup>$</sup> 399</h1>
+                                        <h5 class="color_lightgray">Per Year</h5>
+                                        <div class="list">
+                                            <ul>
+                                                <li>One Website Design</li>
+                                                <li>One PSD Design</li>
+                                                <li>Seo</li>
+                                                <li>Responsive Design</li>
+                                                <li>Free Google Fonts</li>
+                                                <li>Free Font Awesome Icon</li>
+                                                <li>Free Flat Icom</li>
+                                            </ul>
+                                        </div> <a class="btn btn-default w-100 mt_15" href="#">Start Now</a></div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="table text-center bg_deepblack color_secondery">
+                                        <h4 class="color_white">Wordpress Development</h4>
+                                        <h1 class="color_default font-weight-bold"><sup>$</sup> 499</h1>
+                                        <h5 class="color_lightgray">Per Year</h5>
+                                        <div class="list">
+                                            <ul>
+                                                <li>One Website Design</li>
+                                                <li>One PSD Design</li>
+                                                <li>Seo</li>
+                                                <li>Responsive Design</li>
+                                                <li>Free Google Fonts</li>
+                                                <li>Free Font Awesome Icon</li>
+                                                <li>Free Flat Icom</li>
+                                            </ul>
+                                        </div> <a class="btn btn-default w-100 mt_15" href="#">Start Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="team" class="section bg_black pp-scrollable">
+        <div class="container">
+            <div class="team my_60">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="main_title pb_60">
+                            <h2 class="title color_white">Team</h2>
+                            <p class="mt_15 color_lightgray">As a person completes with a professional team, we provides u the best thing of the current market as according to your requirments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="team_member owl-carousel">
+                            <div class="member"> <img src="images/team/Shahnawaz2.jpg" alt="image">
+                                <div class="data">
+                                    <h4 class="bg_default color_primary font-weight-bold m-0">Shahnawaz Khan Jadoon</h4> <strong class="bg_primary color_white">Developer</strong></div>
+                                <div class="hover_overlay">
+                                    <div class="border">
+                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Shahnawaz Khan Jadoon</h4> <strong class="color_white text-center d-block mb_15">Developer</strong>
+                                        <p class="color_white">He is all rounder and whatever app on Desktop, Mobile, Web can work on all platforms feasibly.</p>
+                                        <div class="socal_media">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/shahnawaz.jadoon.790"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member"> <img src="images/team/02.jpg" alt="image">
+                                <div class="data">
+                                    <h4 class="bg_default color_primary font-weight-bold m-0">Noor Us Saba</h4> <strong class="bg_primary color_white">UX/UI Designer</strong></div>
+                                <div class="hover_overlay">
+                                    <div class="border">
+                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Noor Us Saba</h4> <strong class="color_white text-center d-block mb_15">UX/UI Designer</strong>
+                                        <p class="color_white">She will provides u the best design</p>
+                                        <div class="socal_media">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/profile.php?id=100014529122523"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member"> <img src="images/team/Faisal4.jpg" alt="image">
+                                <div class="data">
+                                    <h4 class="bg_default color_primary font-weight-bold m-0">Faisal Khan</h4> <strong class="bg_primary color_white">Network Administrator</strong></div>
+                                <div class="hover_overlay">
+                                    <div class="border">
+                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Faisal Khan</h4><strong class="color_white text-center d-block mb_15">Network Administrator & Developer</strong>
+                                        <p class="color_white">He can work with all types of networks in deep and provides you a wide and secure network for your company, He is also a developer and can works on AI with python.</p>
+                                        <div class="socal_media">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/faysal307"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member"> <img src="images/team/saad2.jpg" alt="image">
+                                <div class="data">
+                                    <h4 class="bg_default color_primary font-weight-bold m-0">Saad Khan Tareen</h4> <strong class="bg_primary color_white">Graphic Designer</strong></div>
+                                <div class="hover_overlay">
+                                    <div class="border">
+                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Saad Khan Tareen</h4> <strong class="color_white text-center d-block mb_15">Graphic Designer</strong>
+                                        <p class="color_white">He can make your logos as well as he can develop your website on php with Laravel framework and MySql database.</p>
+                                        <div class="socal_media">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/saadkhan4069"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonial" class="section bg_black pp-scrollable">
+        <div class="container">
+            <div class="testimonial my_60">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="main_title pb_60">
+                            <h2 class="title color_white">Testimonial</h2>
+                            <p class="mt_15 color_lightgray">Here is our testimonials which tested our products and provide nice feedback to us.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                        <div class="testimonial_item owl-carousel wow animated slideInUp">
+                            <div class="member_feedback p_30 bg_deepblack color_secondery">
+                                <div class="client_img"><img src="images/testimonial/Mohsin.jpg" alt="image"></div>
+                                <div class="star d-inline-block mt_30 color_default">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <h5 class="color_white mb_15">Mohsin Mughal</h5>
+                                <p>I developed an Android app from them they created it on time not only with full functionality but also stunning beautiful graphical user interface.</p>
+                            </div>
+                            <div class="member_feedback p_30 bg_deepblack color_secondery">
+                                <div class="client_img"><img src="images/testimonial/Taha.jpeg" alt="image"></div>
+                                <div class="star d-inline-block mt_30 color_default">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <h5 class="color_white mb_15">Syed Taha Ahmed</h5>
+                                <p>I purchased a gamming mouse from them and i liked it so much due to it's build quality, i also bought one for my cousin as a gift.</p>
+                            </div>
+                            <!-- <div class="member_feedback p_30 bg_deepblack color_secondery">
+                                <div class="client_img"><img src="images/testimonial/03.jpg" alt="image"></div>
+                                <div class="star d-inline-block mt_30 color_default">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <h5 class="color_white mb_15">Lucas Noah</h5>
+                                <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+                            </div>
+                            <div class="member_feedback p_30 bg_deepblack color_secondery">
+                                <div class="client_img"><img src="images/testimonial/04.jpg" alt="image"></div>
+                                <div class="star d-inline-block mt_30 color_default">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <h5 class="color_white mb_15">Grace Ruby</h5>
+                                <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section bg_black pp-scrollable">
+        <div class="container">
+            <div class="contact pt_60">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="main_title pb_60">
+                            <h2 class="title color_white">Contact</h2>
+                            <p class="mt_15 color_lightgray">In search of reliable products? Yes u r at the right place contact us now.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <div class="contact_icon float-left"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                    <div class="contact_text">
+                                        <h6 class="font-weight-bold color_white">CALL</h6> <span class="color_secondery">+92 344 7724318</span></div>
+                                </li>
+                                <li>
+                                    <div class="contact_icon float-left"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                    <div class="contact_text">
+                                        <h6 class="font-weight-bold color_white">EMAIL</h6> <span class="color_secondery">SyedDaniyalAli33@gmail.com</span></div>
+                                </li>
+                                <li>
+                                    <div class="contact_icon float-left"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <div class="contact_text">
+                                        <h6 class="font-weight-bold color_white">ADDRESS</h6> <span class="color_secondery">Shamsi Society, MalirHalt Karachi.</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                        <form class="form contact_message pb_60" id="contact-form" action="" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group"> <input class="form-control bg_black" type="text" name="name" placeholder="Your Name" /></div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group"> <input class="form-control bg_black" type="email" name="email" placeholder="Email Address" /></div>
+                                </div>
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-group"> <input class="form-control bg_black" type="text" name="subject" placeholder="Subject" /></div>
+                                </div>
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-group"><textarea class="form-control bg_black" name="message" rows="7" placeholder="Message"></textarea></div>
+                                </div>
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-group"> <input class="btn btn-default" id="send" value="Send Massage" type="submit" /></div>
+                                </div>
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="error-handel">
+                                        <div id="success">Your email sent Successfully, Thank you.</div>
+                                        <div id="error"> Error occurred while sending email. Please try again later.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer pt_60 background6">
+            <div class="container">
+                <div class="footer_bottom pb_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <!-- <div class="col-md-6 col-lg-6">
+                                    <div class="footer-widget">
+                                        <div class="footer_title pb_30">
+                                            <h3 class="widget_title color_white">Latest Tweets</h3>
+                                        </div>
+                                        <div class="twite color_secondery pb_30">
+                                            <p class="color_white">Habitasse auctor proin netus nam maecenas aptent risus. Eu scelerisque pretium amet augue varius rutrum nonummy. <a class="color_default" href="#"> httm://envato/cprxetxyt</a></p> <i class="fa fa-clock-o" aria-hidden="true"></i><span>Posted On 13 Feb 2019</span></div>
+                                        <div class="twite color_secondery pb_30">
+                                            <p class="color_white">Dolor mollis cum mi leo massa, nulla vehicula accumsan nisi etiam tristique fermentum erat purus. <a class="color_default" href="#"> http://envato/sotvoisd</a></p> <i class="fa fa-clock-o" aria-hidden="true"></i><span>Posted On 12 Feb 2019</span></div>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="footer-widget">
+                                        <div class="footer_title pb_30">
+                                            <h3 class="widget_title color_white">Newsletter Subscribe</h3>
+                                        </div>
+                                        <div class="newsletter">
+                                            <p class="color_white">Want to get latest updates? then don't forget to send your email.
+                                            </p>
+                                            <div class="subscribe mt_30">
+                                                <div class="input-group"> <input type="email" class="form-control" placeholder="Enter your email"> <button class="btn btn-default" type="submit">Send</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright2 p_20 color_lightgray bg_deepblack text-center">
+                <p>SDA @ 2019. All Right Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    var deleteLog = false;
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+            menu: '#menu',
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+            loopTop: true,
+            loopBottom: true
+        });
+    });
+
+    function openNav() {
+        document.getElementById("mysidenav").style.width = "150px";
+    }
+
+    function closeNav() {
+        document.getElementById("mysidenav").style.width = "0";
+    }
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDj9fxHXzQ-sV644JRv4MdeTMVnw_5Gdys",
+        authDomain: "syeddaniyalali-portfolio.firebaseapp.com",
+        databaseURL: "https://syeddaniyalali-portfolio.firebaseio.com",
+        projectId: "syeddaniyalali-portfolio",
+        storageBucket: "syeddaniyalali-portfolio.appspot.com",
+        messagingSenderId: "895661918991",
+        appId: "1:895661918991:web:5d3307cefba8a312fa0c7a",
+        measurementId: "G-86WK7ERYPT"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+<?php
+
+
+
+$docRef = $db->collection('users')->document('aturing');
+$docRef->set([
+    'name' => 'Alan',
+    'email' => 'Mathison',
+    'subject' => 'Turing',
+    'message' => 1912
+]);
+printf('Added data to the aturing document in the users collection.' . PHP_EOL);
+
+?>
+
+    <!-- <script>
+    const firebase = require("firebase");
+    // Required for side-effects
+    require("firebase/firestore");
+</script> -->
+
+    </body>
+
+</html>

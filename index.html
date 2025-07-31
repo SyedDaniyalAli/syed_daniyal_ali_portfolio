@@ -9,937 +9,600 @@
     <meta name="keywords" content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
     <meta name="author" content="Syed Daniyal Ali">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.pagepiling.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/flaticon.css">
     <link rel="stylesheet" href="css/plugins.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css" id="color-change">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo/3.png">
-    <!-- Place your kit's code here -->
-    <!-- <script src="https://kit.fontawesome.com/35916db2f5.js" crossorigin="anonymous"></script> -->
-    <!--load all styles -->
-    <title>Syed Daniyal Ali</title>
+    <title>Syed Daniyal Ali - Senior Software Engineer</title>
+    <style>
+        /* Single Page Specific Styles */
+        .section {
+            padding: 80px 0;
+            min-height: auto;
+        }
+
+        .hero-section {
+            background: url('images/bg-image/bg-1.jpg') center/cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.9) !important;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
+        .btn-primary {
+            background: #ffc107;
+            border: none;
+            color: #000;
+            font-weight: 600;
+            padding: 12px 30px;
+        }
+
+        .btn-primary:hover {
+            background: #e0a800;
+            color: #000;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffc107;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .achievement-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .skill-item {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .experience-item {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: #ffc107;
+            border-radius: 50%;
+            border: 4px solid #000;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ffc107;
+        }
+
+        footer {
+            background: #000;
+            padding: 40px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 
-<!-- <body id="top" class="page-load">
-    <div class="preloader">
-        <div class="lds-css ng-scope">
-            <div class="lds-spinner" style="100%;height:100%">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/logo/3.png" alt="Syed Daniyal Ali">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div> -->
-<!-- <div class="color-panel">
-        <div class="on-panel color_white bg_primary">
-            <div class="text-center icon-spinner"> <i class="fa fa-cog fa-spin fa-3x fa-fw"></i></div>
-        </div>
-        <div class="panel-box"> <span class="panel-title">Theme Colors</span>
-            <ul class="color-box">
-                <li class="default" data-name="default" data-path="css/color.css" data-image="images/logo/29.png" data-target="images/logo/29.png"></li>
-                <li class="color_2" data-name="color_2" data-path="css/color/color-1.css" data-image="images/logo/30.png" data-target="images/logo/30.png"></li>
-                <li class="color_3" data-name="color_3" data-path="css/color/color-2.css" data-image="images/logo/31.png" data-target="images/logo/31.png"></li>
-                <li class="color_4" data-name="color_4" data-path="css/color/color-3.css" data-image="images/logo/32.png" data-target="images/logo/32.png"></li>
-                <li class="color_5" data-name="color_5" data-path="css/color/color-4.css" data-image="images/logo/33.png" data-target="images/logo/33.png"></li>
-                <li class="color_6" data-name="color_6" data-path="css/color/color-5.css" data-image="images/logo/34.png" data-target="images/logo/34.png"></li>
-                <li class="color_7" data-name="color_7" data-path="css/color/color-6.css" data-image="images/logo/35.png" data-target="images/logo/35.png"></li>
-                <li class="color_8" data-name="color_8" data-path="css/color/color-7.css" data-image="images/logo/36.png" data-target="images/logo/36.png"></li>
-                <li class="color_9" data-name="color_9" data-path="css/color/color-8.css" data-image="images/logo/37.png" data-target="images/logo/37.png"></li>
-                <li class="color_10" data-name="color_10" data-path="css/color/color-9.css" data-image="images/logo/38.png" data-target="images/logo/38.png"></li>
-                <li class="color_11" data-name="color_11" data-path="css/color/color-10.css" data-image="images/logo/39.png" data-target="images/logo/39.png"></li>
-                <li class="color_12" data-name="color_12" data-path="css/color/color-11.css" data-image="images/logo/40.png" data-target="images/logo/40.png"></li>
-                <li class="color_13" data-name="color_13" data-path="css/color/color-12.css" data-image="images/logo/41.png" data-target="images/logo/41.png"></li>
-                <li class="color_14" data-name="color_14" data-path="css/color/color-13.css" data-image="images/logo/42.png" data-target="images/logo/42.png"></li>
-            </ul>
-        </div>
-        <div class="template_style"> <span class="layout_title">Template Style</span>
-            <ul>
-                <li><a class="btn_link" href="index-1.html" target="blank">White Version</a></li>
-                <li><a class="btn_link" href="index-2.html" target="blank">Black Version</a></li>
-            </ul>
-        </div>
-    </div> -->
+    </nav>
 
-<!-- <div id="mysidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="flaticon-close-button"></i></a> <img class="nav-logo logosize" src="images/logo/3.png" alt="image">
-    <ul id="menu">
-        <li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
-        <li data-menuanchor="page2"><a href="#page2">About</a></li>
-        <li data-menuanchor="page3"><a href="#page3">Resume</a></li>
-        <li data-menuanchor="page4"><a href="#page4">Services</a></li>
-        <li data-menuanchor="page5"><a href="#page5">Portfolio</a></li>
-        <li data-menuanchor="page6"><a href="#page6">Pricing</a></li>
-        <li data-menuanchor="page7"><a href="#page7">Team</a></li>
-        <li data-menuanchor="page8"><a href="#page8">Testimonial</a></li>
-        <li data-menuanchor="page9"><a href="#page9">Contact</a></li>
-    </ul>
-</div> -->
-
-<div class="sidebar bg_deepblack">
-    <div class="logo text-center">
-        <a href="#page1"><img class="nav-logo logosize" src="images/logo/3.png" alt="logo"></a>
-    </div>
-    <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
-    <div class="socal_media mt_60">
-        <ul>
-            <li><a href="https://www.facebook.com/syeddaniyalali30" target="top"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/daniyalchatting" target="top"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/SyedDaniyalAli" target="top"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://linkedin.com/in/syeddaniyalali" target="top"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="https://instagram.com/syeddaniyalali30" target="top"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-    </div>
-</div>
-
-
-<!-- <div class="contact_massage bg_deepblack"> <a href="#page9"><i class="fa fa-envelope" aria-hidden="true"></i></a></div> -->
-
-<div id="pagepiling">
-    <div class="pagegilling-mani-banner section bg_white">
-        <div id="particles-js" class="banner_image background10">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-12 home-content text-left">
-                        <div class="mainbanner_content"> <span class="pb_5 banner_title color_white">I Am Syed Daniyal Ali!</span>
-                            <h1 class="cd-headline clip is-full-width text-uppercase"> <span class="color_white">I am a</span> <span class="cd-words-wrapper color_default"> <b class="is-visible">Senior Software Engineer.</b> <b>Flutter Developer.</b> <b>Mobile App Developer.</b> </span></h1>
-                            <p class="color_white mb_30">Senior Software Engineer with 5+ years of experience in cross-platform app development using Flutter, Firebase, and REST APIs. Passionate about building scalable, user-centric mobile solutions.</p>
-                            <!-- <a class="btn btn-default" href="#">Download CV</a> -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content text-white">
+                        <h1 class="display-4 fw-bold mb-4">I Am <span class="text-warning">Syed Daniyal Ali</span></h1>
+                        <h2 class="h3 mb-4">Senior Software Engineer & Flutter Developer</h2>
+                        <p class="lead mb-4">Senior Software Engineer with 5+ years of experience in cross-platform app development using Flutter, Firebase, and REST APIs. Passionate about building scalable, user-centric mobile solutions.</p>
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="Syed Daniyal Ali's Resume.pdf" class="btn btn-outline-light" target="_blank">Download CV</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/syeddaniyalali30" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/daniyalchatting" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/SyedDaniyalAli" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://linkedin.com/in/syeddaniyalali" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://instagram.com/syeddaniyalali30" target="_blank"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 text-center">
+                    <img src="images/about/sda_about_dark.jpg" alt="Syed Daniyal Ali" class="img-fluid rounded-circle" style="max-width: 300px;">
+                </div>
             </div>
         </div>
-    </div>
-    <div id="about" class="section bg_black pp-scrollable">
-        <div class="container-fluid">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-dark text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">About Me</h2>
+                <p class="text-light">Senior Software Engineer with 5+ years of experience in cross-platform app development</p>
+            </div>
             <div class="row">
-                <div class="about2">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="row">
-                            <div class="col-md-4 col-lg-4">
-                                <div class="overlay_one"><img src="images/about/sda_about_dark.jpg" alt="image"></div>
-                            </div>
-                            <div class="col-md-8 col-lg-8">
-                                <div class="about_myself pb_60">
-                                    <div class="main_title my_60">
-                                        <h2 class="title color_white">About Me</h2>
-                                        <p class="mt_15 color_lightgray">Senior Software Engineer with 5+ years of experience in cross-platform app development using Flutter, Firebase, and REST APIs. Reduced app load times by 40% and maintained a 95% sprint delivery rate.<br><br>My core expertise includes:</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-lg-6">
-                                            <div class="myself color_lightgray">
-                                                <p>
-
-                                                    <li>Flutter Development</li>
-                                                    <li>Firebase & Firestore</li>
-                                                    <li>REST API Integration</li>
-                                                    <li>State Management (Riverpod, BLoC, Provider, GetX)</li>
-                                                    <li>Cross-platform Mobile Apps</li>
-
-                                                </p>
-                                                <p class="pt_30">
-                                                    <li>Dart Programming Language</li>
-                                                    <li>Java & Python</li>
-                                                    <li>TypeScript & PHP</li>
-                                                    <li>SQL Database Management</li>
-                                                    <li>Git Version Control</li>
-                                                    <li>Agile Development & Problem Solving</li>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-6">
-                                            <div class="personal_info color_lightgray">
-                                                <ul>
-                                                    <li><span class="color_secondery">Name :</span> Syed Daniyal Ali</li>
-                                                    <li><span class="color_secondery">Email :</span> SyedDaniyalAli33@gmail.com</li>
-                                                    <li><span class="color_secondery">Phone :</span> +92 3447724318</li>
-                                                    <li><span class="color_secondery">Date of Birth :</span> 2 March 1999</li>
-                                                    <li><span class="color_secondery">Blood Group :</span> A+</li>
-                                                    <li><span class="color_secondery">Address :</span> Shamsi Society, MalirHalt Karachi.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-warning mb-4">Professional Summary</h3>
+                    <p>Senior Software Engineer with 5+ years of experience in cross-platform app development using Flutter, Firebase, and REST APIs. Reduced app load times by 40% and maintained a 95% sprint delivery rate.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check text-warning me-2"></i>Flutter Development</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>Firebase & Firestore</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>REST API Integration</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>State Management</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>Cross-platform Apps</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="education" class="section bg_black pp-scrollable">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div class="education_experience ml_105 color_lightgray">
-                        <div class="main_title my_60">
-                            <h2 class="title color_white">Education & Achievements</h2>
-                            <p class="mt_15 color_lightgray">Senior Software Engineer with 5+ years of experience developing professional Flutter applications with 95% sprint delivery rate</p>
-                        </div>
-                        <ul class="nav nav-pills pb_60" id="pills-tab" role="tablist">
-                            <li class="nav-item"> <a class="btn btn-default active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Awards & Achievements</a></li>
-                            <li class="nav-item mx_10"> <a class="btn btn-default" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Education & Experience</a></li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">01.</h1>
-                                            <h4 class="color_white font-weight-bold">Winner in Mobile App Development</h4> <span class="color_secondery">2021</span></div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <p>Won the Mobile App Development competition at Aptech, Pakistan, demonstrating excellence in Flutter and cross-platform development.</p>
-                                            <br><p>This achievement recognized my expertise in creating innovative mobile solutions with modern technologies and clean architecture principles.</p>
-                                        </div>
-                                        <div class="col-md-12 col-lg-4"> <img src="images/education/aptech_techwiz.jpg" alt="image"></div>
-                                    </div>
-                                </div>
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4">
-                                            <p>Received recognition and funding from the Government of Pakistan's Ignite National Technology Fund for outstanding contribution to the technology sector.</p>
-                                            <br><p>This prestigious award acknowledges innovative solutions and excellence in software development, specifically for developing high-impact mobile applications.</p>
-                                        </div>
-                                        <div class="col-md-12 col-lg-4"> <img src="images/education/techon.jpg" alt="image"></div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">02.</h1>
-                                            <h4 class="color_white font-weight-bold">Ignite National Technology Fund</h4> <span class="color_secondery">2021</span></div>
-                                    </div>
-                                </div>
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4"> <img src="images/education/fast_uni2.jpg" alt="image"></div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">03.</h1>
-                                            <h4 class="color_white font-weight-bold">1st Position in Android Development</h4> <span class="color_secondery">2020</span></div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <p>Achieved first position in Android Development competition at Fast University, Karachi, Pakistan.</p>
-                                            <br><p>Developed a comprehensive news application with Firebase authentication and real-time data synchronization, showcasing advanced mobile development skills.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">04.</h1>
-                                            <h4 class="color_white font-weight-bold">Student of the Year</h4> <span class="color_secondery">2019</span></div>
-                                        <div class="col-md-12 col-lg-4"> <img src="images/education/aptech.png" alt="image"></div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <p>Received "Student of the Year" award at Aptech Pakistan for outstanding academic performance and technical excellence.</p>
-                                            <br><p>This recognition was based on consistent high performance, innovative project development, and leadership in collaborative programming projects.</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <!-- Work Experience Section -->
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">01.</h1>
-                                            <h4 class="color_white font-weight-bold">Sr. Software Engineer - Flutter</h4>
-                                            <span class="color_secondery">Invision Solutions (Current)</span>
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <p><strong>Key Achievements:</strong></p>
-                                            <li>Developed and maintained 10+ cross-platform apps using Flutter, Firebase, REST APIs</li>
-                                            <li>Collaborated across 20+ sprints with 95% on-time delivery</li>
-                                            <li>Decreased average app load times by 40% through optimization</li>
-                                            <li>Implemented Firebase Auth and Firestore in 6+ apps</li>
-                                            <br><p>Specialized in modern state management (Riverpod, BLoC, Provider, Getx) and delivered scalable solutions across industries like religion, AI, education, logistics, and language learning.</p>
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <img src="images/education/fast_uni3.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4">
-                                            <p><strong>Key Projects:</strong></p>
-                                            <li>Developed 4+ cross-platform mobile apps for transportation and automotive sectors</li>
-                                            <li>Integrated real-time data handling with smooth user experiences</li>
-                                            <li>Maintained 90%+ crash-free sessions across low- to mid-tier Android devices</li>
-                                            <br><p>Focused on creating robust mobile applications with seamless user authentication and real-time data synchronization.</p>
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <img src="images/education/aptech.png" alt="image">
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">02.</h1>
-                                            <h4 class="color_white font-weight-bold">Mobile Application Developer</h4>
-                                            <span class="color_secondery">Quantic Solutions</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Education Section -->
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div style="background-color: white;" class="col-md-12 col-lg-4">
-                                            <img src="images/education/indus_uni_logo.png" alt="image">
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <p>Location: Indus University, Karachi, Pakistan</p><br>
-                                            <p><strong>Major:</strong> Computer Science with Minor in Mathematics</p><br>
-                                            <p><strong>CGPA:</strong> 3.68</p><br>
-                                            <p><strong>Final Project:</strong> AI-based intruder detection system using Flutter</p><br>
-                                            <p>Completed comprehensive coursework in software engineering, data structures, algorithms, database management, and artificial intelligence.</p>
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">03.</h1>
-                                            <h4 class="color_white font-weight-bold">Bachelor of Science in Computer Science</h4>
-                                            <span class="color_secondery">2018 - 2022</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="company pb_60">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-4">
-                                            <h1 class="color_lightgray font-weight-bold">04.</h1>
-                                            <h4 class="color_white font-weight-bold">Software Engineering Course</h4>
-                                            <span class="color_secondery">2019</span>
-                                        </div>
-                                        <div style="background-color: white;" class="col-md-12 col-lg-4">
-                                            <img src="images/education/aptech.png" alt="image">
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <p>Location: Aptech, Karachi, Pakistan</p><br>
-                                            <p>Focused on Android and cross-platform development with emphasis on modern software engineering practices.</p><br>
-                                            <p>Gained expertise in mobile application development, database design, and software project management methodologies.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row bg_deepblack">
-                <div class="col-md-12 col-lg-12">
-                    <div class="video my_60">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-7">
-                                <div class="video_content ml_105">
-                                    <h2 class="color_default">My project exhibition video</h2>
-                                    <p class="color_white">This is my project exhibition video in which i introduce my self and the concept of my project why i decided to create this project.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-lg-5">
-                                <div class="personal_video"> <img src="images/video.jpg" alt="image">
-                                    <a class="video-popup" href="https://www.facebook.com/AptechMetro/videos/327520511536677/?__xts__[0]=68.ARAVTKx_MuWPRGLzqBRggcFscqH9di8ugXgcEEYNAtzVRwjmdgFbJujUeuqPYJpKvH8DIj8UwPrfjPv96DCzmkH46oTAdHf4jTRbLe8o65Kcr1QgXykTpRjwS2DcS_J3pjjKY1DFVga58kVg0vs8ZyFO_WNXBBWK2AB4upi-KM_GtAH7Q58y6EOm-b-6pum4yk0g-by51nIquL4CzGi57htsaJ2uwpSIGQsYaCHthWmnntSLjfy6deoafQo-9U2wcO-eamT_m1N8_25sfyJFMXIoD-vBoj2HoHpLOdX65oyYO0k7NHpeEc6EIzMqLrv8Jy13MPZmoT1hbQOWgfwhZBzB7cxq_CUofw&__tn__=H-R"
-                                        title="video popup"> <i class="fa fa-play" aria-hidden="true"></i></a>
-                                    <div class="loader xy-center">
-                                        <div class="loader-inner ball-scale-multiple">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services=================================================================================================================== -->
-    <div id="services" class="section bg_black pp-scrollable">
-        <div class="container">
-            <div class="services my_60">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="main_title pb_60">
-                            <h2 class="title color_white">Services</h2>
-                            <p class="mt_15 color_lightgray">I can provide u a service that u will come back to me for your next work (InshaAllah).</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="services_item owl-carousel">
-                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
-                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-android"></span></div>
-                        <h3 class="font-weight-bold color_white">Android Development</h3>
-                        <p>To develop an Application for you it's the best idea to meetup to ask your perfect requirment.</p>
-                    </div>
-                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
-                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-programming"></span></div>
-                        <h3 class="font-weight-bold color_white">Web Development</h3>
-                        <p>Developing a Website for you it's the best to meetup as your perfect requirments of dreams.</p>
-                    </div>
-                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
-                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-website-design-symbol"></span></div>
-                        <h3 class="font-weight-bold color_white">Web Design</h3>
-                        <p>We will provide the best ever eligant designed website beyond from your throughs and ideas.</p>
-                    </div>
-                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
-                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-connectdevelop"></span></div>
-                        <h3 class="font-weight-bold color_white">Home Automation</h3>
-                        <p>We can automate your home with the essential power of IOT devices with in some days.</p>
-                    </div>
-                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
-                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-laptop"></span></div>
-                        <h3 class="font-weight-bold color_white">Laptops and PCs</h3>
-                        <p>Wanna laptop, pcs or accessories? no worries we will provide u the best new or used in Pakistan.</p>
-                    </div>
-                    <div class="service_one text-center p_30 bg_deepblack color_secondery">
-                        <div class="srvicon bg_default color_white mx-auto mb_20"><span class="fa fa-lg fa-image"></span></div>
-                        <h3 class="font-weight-bold color_white">Branding Logos</h3>
-                        <p>Want to start your brand or a new business then u must in search of eligant logo, we will create for you!.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div id="portfolio" class="section bg_black pp-scrollable">
-        <div class="container">
-            <div class="portfolio2 my_60">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="main_title pb_60">
-                            <h2 class="title color_white">My little gallery</h2>
-                            <p class="mt_15 color_lightgray">Some special pictures.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-12">
-                        <div class="my_portfolio" id="tab-panel">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="filters mb_30 w-100 color_lightgray">
-                                        <ul class="filter-tabs d-inline-block">
-                                            <li class="active filter" data-role="button" data-filter="all">All</li>
-                                            <li class="filter" data-role="button" data-filter=".design">Web Design</li>
-                                            <li class="filter" data-role="button" data-filter=".wordpress">Wordpress</li>
-                                            <li class="filter" data-role="button" data-filter=".development">Web Development</li>
-                                            <li class="filter" data-role="button" data-filter=".branding">Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-list">
-                                <div class="portfolio-items">
-                                    <div class="row">
-                                        <div class="column mix mix_all graphic development wordpress mb_30 col-md-4 col-lg-4">
-                                            <div class="default-portfolio-item">
-                                                <a href="images/portfolio/01.jpg" data-fancybox="gallery"> <img src="images/portfolio/01.jpg" alt="image" />
-                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                                                        <div class="tag">
-                                                            <ul>
-                                                                <li>Web Development,</li>
-                                                                <li>wordpress</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column mix mix_all graphic branding mb_30 col-md-4 col-lg-4">
-                                            <div class="default-portfolio-item">
-                                                <a href="images/portfolio/02.jpg" data-fancybox="gallery"> <img src="images/portfolio/02.jpg" alt="image" />
-                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                                                        <div class="tag">
-                                                            <ul>
-                                                                <li>Branding,</li>
-                                                                <li>Wordpress</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column mix mix_all design wordpress development mb_30 col-md-4 col-lg-4">
-                                            <div class="default-portfolio-item">
-                                                <a href="images/portfolio/03.jpg" data-fancybox="gallery"> <img src="images/portfolio/03.jpg" alt="image" />
-                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                                                        <div class="tag">
-                                                            <ul>
-                                                                <li>Web Design,</li>
-                                                                <li>Web Development</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column mix mix_all graphic wordpress branding mb_30 col-md-4 col-lg-4">
-                                            <div class="default-portfolio-item">
-                                                <a href="images/portfolio/04.jpg" data-fancybox="gallery"> <img src="images/portfolio/04.jpg" alt="image" />
-                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                                                        <div class="tag">
-                                                            <ul>
-                                                                <li>Branding,</li>
-                                                                <li>wordpress</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column mix mix_all graphic design branding mb_30 col-md-4 col-lg-4">
-                                            <div class="default-portfolio-item">
-                                                <a href="images/portfolio/05.jpg" data-fancybox="gallery"> <img src="images/portfolio/05.jpg" alt="image" />
-                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                                                        <div class="tag">
-                                                            <ul>
-                                                                <li>Web Design,</li>
-                                                                <li>wordpress</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column mix mix_all development wordpress design mb_30 col-md-4 col-lg-4">
-                                            <div class="default-portfolio-item">
-                                                <a href="images/portfolio/06.jpg" data-fancybox="gallery"> <img src="images/portfolio/06.jpg" alt="image" />
-                                                    <div class="overlay-box"> <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                                                        <div class="tag">
-                                                            <ul>
-                                                                <li>Web Design,</li>
-                                                                <li>Web Development</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div id="pricing" class="section bg_black pp-scrollable">
-        <div class="container">
-            <div class="pricing my_60">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="main_title pb_60">
-                            <h2 class="title color_white">Pricing</h2>
-                            <p class="mt_15 color_lightgray">Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit nulla dolor habitant.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="price_table">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="table text-center bg_deepblack color_secondery">
-                                        <h4 class="color_white">Website Design</h4>
-                                        <h1 class="color_default font-weight-bold"><sup>$</sup> 299</h1>
-                                        <h5 class="color_lightgray">Per Year</h5>
-                                        <div class="list">
-                                            <ul>
-                                                <li>One Website Design</li>
-                                                <li>One PSD Design</li>
-                                                <li>Seo</li>
-                                                <li>Responsive Design</li>
-                                                <li>Free Google Fonts</li>
-                                                <li>Free Font Awesome Icon</li>
-                                                <li>Free Flat Icom</li>
-                                            </ul>
-                                        </div> <a class="btn btn-default w-100 mt_15" href="#">Start Now</a></div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="table text-center bg_deepblack color_secondery">
-                                        <h4 class="color_white">Web Development</h4>
-                                        <h1 class="color_default font-weight-bold"><sup>$</sup> 399</h1>
-                                        <h5 class="color_lightgray">Per Year</h5>
-                                        <div class="list">
-                                            <ul>
-                                                <li>One Website Design</li>
-                                                <li>One PSD Design</li>
-                                                <li>Seo</li>
-                                                <li>Responsive Design</li>
-                                                <li>Free Google Fonts</li>
-                                                <li>Free Font Awesome Icon</li>
-                                                <li>Free Flat Icom</li>
-                                            </ul>
-                                        </div> <a class="btn btn-default w-100 mt_15" href="#">Start Now</a></div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="table text-center bg_deepblack color_secondery">
-                                        <h4 class="color_white">Wordpress Development</h4>
-                                        <h1 class="color_default font-weight-bold"><sup>$</sup> 499</h1>
-                                        <h5 class="color_lightgray">Per Year</h5>
-                                        <div class="list">
-                                            <ul>
-                                                <li>One Website Design</li>
-                                                <li>One PSD Design</li>
-                                                <li>Seo</li>
-                                                <li>Responsive Design</li>
-                                                <li>Free Google Fonts</li>
-                                                <li>Free Font Awesome Icon</li>
-                                                <li>Free Flat Icom</li>
-                                            </ul>
-                                        </div> <a class="btn btn-default w-100 mt_15" href="#">Start Now</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div id="team" class="section bg_black pp-scrollable">
-        <div class="container">
-            <div class="team my_60">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="main_title pb_60">
-                            <h2 class="title color_white">Team</h2>
-                            <p class="mt_15 color_lightgray">As a person completes with a professional team, we provides u the best thing of the current market as according to your requirments.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="team_member owl-carousel">
-                            <div class="member"> <img src="images/team/Shahnawaz2.jpg" alt="image">
-                                <div class="data">
-                                    <h4 class="bg_default color_primary font-weight-bold m-0">Shahnawaz Khan Jadoon</h4> <strong class="bg_primary color_white">Developer</strong></div>
-                                <div class="hover_overlay">
-                                    <div class="border">
-                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Shahnawaz Khan Jadoon</h4> <strong class="color_white text-center d-block mb_15">Developer</strong>
-                                        <p class="color_white">He is all rounder and whatever app on Desktop, Mobile, Web can work on all platforms feasibly.</p>
-                                        <div class="socal_media">
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/shahnawaz.jadoon.790"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="member"> <img src="images/team/02.jpg" alt="image">
-                                <div class="data">
-                                    <h4 class="bg_default color_primary font-weight-bold m-0">Noor Us Saba</h4> <strong class="bg_primary color_white">UX/UI Designer</strong></div>
-                                <div class="hover_overlay">
-                                    <div class="border">
-                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Noor Us Saba</h4> <strong class="color_white text-center d-block mb_15">UX/UI Designer</strong>
-                                        <p class="color_white">She will provides u the best design</p>
-                                        <div class="socal_media">
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/profile.php?id=100014529122523"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="member"> <img src="images/team/Faisal4.jpg" alt="image">
-                                <div class="data">
-                                    <h4 class="bg_default color_primary font-weight-bold m-0">Faisal Khan</h4> <strong class="bg_primary color_white">Network Administrator</strong></div>
-                                <div class="hover_overlay">
-                                    <div class="border">
-                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Faisal Khan</h4><strong class="color_white text-center d-block mb_15">Network Administrator & Developer</strong>
-                                        <p class="color_white">He can work with all types of networks in deep and provides you a wide and secure network for your company, He is also a developer and can works on AI with python.</p>
-                                        <div class="socal_media">
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/faysal307"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="member"> <img src="images/team/saad2.jpg" alt="image">
-                                <div class="data">
-                                    <h4 class="bg_default color_primary font-weight-bold m-0">Saad Khan Tareen</h4> <strong class="bg_primary color_white">Graphic Designer</strong></div>
-                                <div class="hover_overlay">
-                                    <div class="border">
-                                        <h4 class="color_default font-weight-bold text-center text-uppercase">Saad Khan Tareen</h4> <strong class="color_white text-center d-block mb_15">Graphic Designer</strong>
-                                        <p class="color_white">He can make your logos as well as he can develop your website on php with Laravel framework and MySql database.</p>
-                                        <div class="socal_media">
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/saadkhan4069"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="testimonial" class="section bg_black pp-scrollable">
-        <div class="container">
-            <div class="testimonial my_60">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="main_title pb_60">
-                            <h2 class="title color_white">Testimonial</h2>
-                            <p class="mt_15 color_lightgray">Here is our testimonials which tested our products and provide nice feedback to us.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-12">
-                        <div class="testimonial_item owl-carousel wow animated slideInUp">
-                            <div class="member_feedback p_30 bg_deepblack color_secondery">
-                                <div class="client_img"><img src="images/testimonial/Mohsin.jpg" alt="image"></div>
-                                <div class="star d-inline-block mt_30 color_default">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <h5 class="color_white mb_15">Mohsin Mughal</h5>
-                                <p>I developed an Android app from them they created it on time not only with full functionality but also stunning beautiful graphical user interface.</p>
-                            </div>
-                            <div class="member_feedback p_30 bg_deepblack color_secondery">
-                                <div class="client_img"><img src="images/testimonial/Taha.jpeg" alt="image"></div>
-                                <div class="star d-inline-block mt_30 color_default">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <h5 class="color_white mb_15">Syed Taha Ahmed</h5>
-                                <p>I purchased a gamming mouse from them and i liked it so much due to it's build quality, i also bought one for my cousin as a gift.</p>
-                            </div>
-                            <!-- <div class="member_feedback p_30 bg_deepblack color_secondery">
-                                <div class="client_img"><img src="images/testimonial/03.jpg" alt="image"></div>
-                                <div class="star d-inline-block mt_30 color_default">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <h5 class="color_white mb_15">Lucas Noah</h5>
-                                <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
-                            </div>
-                            <div class="member_feedback p_30 bg_deepblack color_secondery">
-                                <div class="client_img"><img src="images/testimonial/04.jpg" alt="image"></div>
-                                <div class="star d-inline-block mt_30 color_default">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <h5 class="color_white mb_15">Grace Ruby</h5>
-                                <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="section bg_black pp-scrollable">
-        <div class="container">
-            <div class="contact pt_60">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="main_title pb_60">
-                            <h2 class="title color_white">Contact</h2>
-                            <p class="mt_15 color_lightgray">In search of reliable products? Yes u r at the right place contact us now.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 col-lg-4">
-                        <div class="contact_info">
-                            <ul>
-                                <li>
-                                    <div class="contact_icon float-left"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                                    <div class="contact_text">
-                                        <h6 class="font-weight-bold color_white">CALL</h6> <span class="color_secondery">+92 344 7724318</span></div>
-                                </li>
-                                <li>
-                                    <div class="contact_icon float-left"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                    <div class="contact_text">
-                                        <h6 class="font-weight-bold color_white">EMAIL</h6> <span class="color_secondery">SyedDaniyalAli33@gmail.com</span></div>
-                                </li>
-                                <li>
-                                    <div class="contact_icon float-left"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                                    <div class="contact_text">
-                                        <h6 class="font-weight-bold color_white">ADDRESS</h6> <span class="color_secondery">Shamsi Society, MalirHalt Karachi.</span></div>
-                                </li>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check text-warning me-2"></i>Dart Programming</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>Java & Python</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>TypeScript & PHP</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>SQL Databases</li>
+                                <li><i class="fa fa-check text-warning me-2"></i>Agile Development</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-7 col-lg-8">
-                        <form class="form contact_message pb_60" id="contact-form" onsubmit="return false;">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6">
-                                    <div class="form-group"> <input class="form-control bg_black" type="text" id="name" name="name" placeholder="Your Name" /></div>
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <div class="form-group"> <input class="form-control bg_black" type="email" id="email" name="email" placeholder="Email Address" /></div>
-                                </div>
-                                <div class="col-md-12 col-lg-12">
-                                    <div class="form-group"> <input class="form-control bg_black" type="text" id="subject" name="subject" placeholder="Subject" /></div>
-                                </div>
-                                <div class="col-md-12 col-lg-12">
-                                    <div class="form-group"><textarea class="form-control bg_black" id="message" name="message" rows="7" placeholder="Message"></textarea></div>
-                                </div>
-                                <div class="col-md-12 col-lg-12">
-                                    <div class="form-group"> <input class="btn btn-default" id="send" value="Send Massage" type="submit" /></div>
-                                </div>
-                                <div class="col-md-12 col-lg-12">
-                                    <div class="error-handel">
-                                        <div id="success">Your email sent Successfully, Thank you.</div>
-                                        <div id="error"> Error occurred while sending email. Please try again later.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-warning mb-4">Personal Information</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p><strong>Name:</strong> Syed Daniyal Ali</p>
+                            <p><strong>Email:</strong> SyedDaniyalAli33@gmail.com</p>
+                            <p><strong>Phone:</strong> +92 3447724318</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p><strong>Date of Birth:</strong> 2 March 1999</p>
+                            <p><strong>Location:</strong> Karachi, Pakistan</p>
+                            <p><strong>Languages:</strong> English, Urdu</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer pt_60 background6">
-            <div class="container">
-                <div class="footer_bottom pb_60">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="row">
-                                <!-- <div class="col-md-6 col-lg-6">
-                                    <div class="footer-widget">
-                                        <div class="footer_title pb_30">
-                                            <h3 class="widget_title color_white">Latest Tweets</h3>
-                                        </div>
-                                        <div class="twite color_secondery pb_30">
-                                            <p class="color_white">Habitasse auctor proin netus nam maecenas aptent risus. Eu scelerisque pretium amet augue varius rutrum nonummy. <a class="color_default" href="#"> httm://envato/cprxetxyt</a></p> <i class="fa fa-clock-o" aria-hidden="true"></i><span>Posted On 13 Feb 2019</span></div>
-                                        <div class="twite color_secondery pb_30">
-                                            <p class="color_white">Dolor mollis cum mi leo massa, nulla vehicula accumsan nisi etiam tristique fermentum erat purus. <a class="color_default" href="#"> http://envato/sotvoisd</a></p> <i class="fa fa-clock-o" aria-hidden="true"></i><span>Posted On 12 Feb 2019</span></div>
-                                    </div>
-                                </div> -->
-                                <div class="col-md-6 col-lg-6">
-                                    <div class="footer-widget">
-                                        <div class="footer_title pb_30">
-                                            <h3 class="widget_title color_white">Newsletter Subscribe</h3>
-                                        </div>
-                                        <div class="newsletter">
-                                            <p class="color_white">Want to get latest updates? then don't forget to send your email.
-                                            </p>
-                                            <div class="subscribe mt_30">
-                                                <form action="mailto:SyedDaniyalAli33@gmail.com">
-                                                    <div class="input-group">
-                                                        <input type="email" class="form-control" placeholder="Enter your email"> <button class="btn btn-default" type="submit">Send</button>
+    </section>
 
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-black text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Work Experience</h2>
+                <p class="text-light">My professional journey and key achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="experience-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h5 class="text-warning">Current</h5>
+                            <p class="text-muted">Invision Solutions</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <h4>Sr. Software Engineer - Flutter</h4>
+                            <ul>
+                                <li>Developed and maintained 10+ cross-platform apps using Flutter, Firebase, REST APIs</li>
+                                <li>Collaborated across 20+ sprints with 95% on-time delivery</li>
+                                <li>Decreased average app load times by 40% through optimization</li>
+                                <li>Implemented Firebase Auth and Firestore in 6+ apps</li>
+                                <li>Specialized in modern state management (Riverpod, BLoC, Provider, GetX)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h5 class="text-warning">Previous</h5>
+                            <p class="text-muted">Quantic Solutions</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <h4>Mobile Application Developer</h4>
+                            <ul>
+                                <li>Developed 4+ cross-platform mobile apps for transportation and automotive sectors</li>
+                                <li>Integrated real-time data handling with smooth user experiences</li>
+                                <li>Maintained 90%+ crash-free sessions across low- to mid-tier Android devices</li>
+                                <li>Focused on creating robust mobile applications with seamless user authentication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-dark text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Technical Skills</h2>
+                <p class="text-light">Technologies and tools I work with</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-item">
+                        <i class="fa fa-mobile fa-3x text-warning mb-3"></i>
+                        <h5>Flutter Development</h5>
+                        <p>Cross-platform mobile app development with modern UI/UX</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-item">
+                        <i class="fa fa-database fa-3x text-warning mb-3"></i>
+                        <h5>Firebase & Databases</h5>
+                        <p>Real-time databases, authentication, and cloud functions</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-item">
+                        <i class="fa fa-code fa-3x text-warning mb-3"></i>
+                        <h5>Programming Languages</h5>
+                        <p>Dart, Java, Python, TypeScript, PHP, SQL</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-item">
+                        <i class="fa fa-cogs fa-3x text-warning mb-3"></i>
+                        <h5>State Management</h5>
+                        <p>Riverpod, BLoC, Provider, GetX for scalable architecture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-black text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Awards & Achievements</h2>
+                <p class="text-light">Recognition for excellence in software development</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <img src="images/education/aptech_techwiz.jpg" alt="Award" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="text-warning">Winner in Mobile App Development</h5>
+                                <p class="text-muted">2021 • Aptech Pakistan</p>
+                                <p>Won the Mobile App Development competition demonstrating excellence in Flutter and cross-platform development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <img src="images/education/techon.jpg" alt="Award" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="text-warning">Ignite National Technology Fund</h5>
+                                <p class="text-muted">2021 • Government of Pakistan</p>
+                                <p>Received recognition and funding for outstanding contribution to the technology sector.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <img src="images/education/fast_uni2.jpg" alt="Award" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="text-warning">1st Position in Android Development</h5>
+                                <p class="text-muted">2020 • Fast University</p>
+                                <p>Achieved first position in Android Development competition with a comprehensive news application.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <img src="images/education/aptech.png" alt="Award" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="text-warning">Student of the Year</h5>
+                                <p class="text-muted">2019 • Aptech Pakistan</p>
+                                <p>Received award for outstanding academic performance and technical excellence.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright2 p_20 color_lightgray bg_deepblack text-center">
-                <p>SDA @ 2019. All Right Reserved.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-dark text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Education</h2>
+                <p class="text-light">My academic background and qualifications</p>
+            </div>
+            <div class="timeline">
+                <div class="experience-item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <img src="images/education/indus_uni_logo.png" alt="Indus University" class="img-fluid bg-white rounded p-2">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4>Bachelor of Science in Computer Science</h4>
+                            <h6 class="text-warning">2018 - 2022 • Indus University, Karachi</h6>
+                            <p><strong>CGPA:</strong> 3.68 | <strong>Minor:</strong> Mathematics</p>
+                            <p><strong>Final Project:</strong> AI-based intruder detection system using Flutter</p>
+                            <p>Completed comprehensive coursework in software engineering, data structures, algorithms, database management, and artificial intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <img src="images/education/aptech.png" alt="Aptech" class="img-fluid bg-white rounded p-2">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4>Software Engineering Course</h4>
+                            <h6 class="text-warning">2019 • Aptech, Karachi</h6>
+                            <p>Focused on Android and cross-platform development with emphasis on modern software engineering practices. Gained expertise in mobile application development, database design, and software project management methodologies.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/particles.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/jquery.pagepiling.min.js"></script>
-<script src="js/custom.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-black text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Get In Touch</h2>
+                <p class="text-light">Let's discuss your next project</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fa fa-phone fa-3x text-warning mb-3"></i>
+                        <h5 class="text-white">Phone</h5>
+                        <p class="text-light">+92 344 7724318</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fa fa-envelope fa-3x text-warning mb-3"></i>
+                        <h5 class="text-white">Email</h5>
+                        <p class="text-light">SyedDaniyalAli33@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fa fa-map-marker fa-3x text-warning mb-3"></i>
+                        <h5 class="text-white">Location</h5>
+                        <p class="text-light">Shamsi Society, Malir Halt, Karachi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <form class="card p-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control bg-dark text-white border-secondary" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-    var deleteLog = false;
-    $(document).ready(function() {
-        $('#pagepiling').pagepiling({
-            menu: '#menu',
-            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
-            loopTop: true,
-            loopBottom: true
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light">&copy; 2025 Syed Daniyal Ali. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/syeddaniyalali30" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/daniyalchatting" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/SyedDaniyalAli" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/syeddaniyalali" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://instagram.com/syeddaniyalali30" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
-    });
 
-    function openNav() {
-        document.getElementById("mysidenav").style.width = "150px";
-    }
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(0,0,0,0.95)';
+            } else {
+                navbar.style.background = 'rgba(0,0,0,0.9)';
+            }
+        });
 
-    function closeNav() {
-        document.getElementById("mysidenav").style.width = "0";
-    }
-</script>
+        // Contact form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
 
-<!--Firebase-->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
 
-<!-- <script defer src="js/custom.js"></script> -->
+    <script>
+        // Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDj9fxHXzQ-sV644JRv4MdeTMVnw_5Gdys",
+            authDomain: "syeddaniyalali-portfolio.firebaseapp.com",
+            databaseURL: "https://syeddaniyalali-portfolio.firebaseio.com",
+            projectId: "syeddaniyalali-portfolio",
+            storageBucket: "syeddaniyalali-portfolio.appspot.com",
+            messagingSenderId: "895661918991",
+            appId: "1:895661918991:web:5d3307cefba8a312fa0c7a",
+            measurementId: "G-86WK7ERYPT"
+        };
 
-
-<script>
-    // Your web app 's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyDj9fxHXzQ-sV644JRv4MdeTMVnw_5Gdys",
-        authDomain: "syeddaniyalali-portfolio.firebaseapp.com",
-        databaseURL: "https://syeddaniyalali-portfolio.firebaseio.com",
-        projectId: "syeddaniyalali-portfolio",
-        storageBucket: "syeddaniyalali-portfolio.appspot.com",
-        messagingSenderId: "895661918991",
-        appId: "1:895661918991:web:5d3307cefba8a312fa0c7a",
-        measurementId: "G-86WK7ERYPT"
-    };
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    var db = firebase.firestore();
-</script>
-
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+    </script>
 
 </body>
 

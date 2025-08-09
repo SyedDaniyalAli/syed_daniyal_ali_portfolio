@@ -762,11 +762,11 @@
         /* Fix navbar collapse on mobile */
         @media (max-width: 991px) {
             .navbar {
-                padding: 0.5rem 0; /* Reduced padding on mobile */
+                padding: 0.5rem 0;
             }
 
             .navbar-brand img {
-                height: 30px; /* Smaller logo on mobile */
+                height: 30px;
             }
 
             .navbar-collapse {
@@ -786,7 +786,9 @@
 
             .navbar-toggler {
                 border: 1px solid rgba(255, 255, 255, 0.3);
-                padding: 6px 10px; /* Reduced padding for smaller button */
+                padding: 4px 8px;
+                margin-left: 0 !important;
+                margin-right: auto;
             }
 
             .navbar-toggler:focus {
@@ -795,7 +797,7 @@
 
             .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-                width: 20px; /* Smaller icon size */
+                width: 20px;
                 height: 20px;
             }
         }
@@ -803,20 +805,159 @@
         /* Extra small devices - even more compact */
         @media (max-width: 576px) {
             .navbar {
-                padding: 0.45rem 0; /* Even smaller padding on very small screens */
+                padding: 0.45rem 0;
             }
 
             .navbar-brand img {
-                height: 25px; /* Even smaller logo */
+                height: 25px;
             }
 
             .navbar-toggler {
-                padding: 4px 8px; /* Minimal padding */
+                padding: 4px 8px;
+                margin-left: 0 !important;
             }
 
             .navbar-toggler-icon {
-                width: 18px; /* Smaller icon */
+                width: 18px;
                 height: 18px;
+            }
+        }
+
+        /* Light/Dark Mode Styles */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+            background: #3b82f6;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+
+        .theme-toggle:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Light theme styles */
+        .light-theme {
+            background-color: #f8fafc !important;
+            color: #1e293b !important;
+        }
+
+        .light-theme .navbar {
+            background: rgba(248, 250, 252, 0.95) !important;
+        }
+
+        .light-theme .navbar-nav .nav-link {
+            color: #1e293b !important;
+        }
+
+        .light-theme .navbar-nav .nav-link:hover {
+            color: #3b82f6 !important;
+        }
+
+        .light-theme .navbar-collapse {
+            background: rgba(248, 250, 252, 0.98) !important;
+        }
+
+        .light-theme .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2830, 41, 59, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        }
+
+        .light-theme .bg-dark {
+            background-color: #e2e8f0 !important;
+        }
+
+        .light-theme .bg-black {
+            background-color: #f1f5f9 !important;
+        }
+
+        .light-theme .text-white {
+            color: #1e293b !important;
+        }
+
+        .light-theme .text-light {
+            color: #475569 !important;
+        }
+
+        .light-theme .text-muted {
+            color: #64748b !important;
+        }
+
+        .light-theme .card {
+            background: #ffffff !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .light-theme .achievement-card {
+            background: #ffffff !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .light-theme .experience-item {
+            background: #ffffff !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .light-theme footer {
+            background: #1e293b !important;
+        }
+
+        .light-theme footer .text-light {
+            color: #e2e8f0 !important;
+        }
+
+        .light-theme .hero-section::before {
+            background: rgba(248, 250, 252, 0.85) !important;
+        }
+
+        .light-theme .hero-content .text-white {
+            color: #1e293b !important;
+        }
+
+        .light-theme .form-control {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+
+        .light-theme .form-control:focus {
+            background-color: #ffffff !important;
+            border-color: #3b82f6 !important;
+            box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25) !important;
+        }
+
+        /* Responsive theme toggle */
+        @media (max-width: 768px) {
+            .theme-toggle {
+                top: 15px;
+                right: 15px;
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
             }
         }
     </style>
@@ -845,6 +986,11 @@
             </div>
         </div>
     </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+        <i class="fa fa-sun-o" id="themeIcon"></i>
+    </button>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -1502,6 +1648,40 @@
             var text = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + subject + '\nMessage: ' + message);
             var url = 'https://wa.me/' + whatsappNumber + '?text=' + text;
             window.open(url, '_blank');
+        });
+
+        // Theme Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+
+            // Check for saved theme preference or default to dark mode
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+
+            // Apply the saved theme
+            if (currentTheme === 'light') {
+                body.classList.add('light-theme');
+                themeIcon.className = 'fa fa-moon-o';
+            } else {
+                body.classList.remove('light-theme');
+                themeIcon.className = 'fa fa-sun-o';
+            }
+
+            // Theme toggle click handler
+            themeToggle.addEventListener('click', function() {
+                body.classList.toggle('light-theme');
+
+                if (body.classList.contains('light-theme')) {
+                    // Switch to light theme
+                    themeIcon.className = 'fa fa-moon-o';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    // Switch to dark theme
+                    themeIcon.className = 'fa fa-sun-o';
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
         });
     </script>
 

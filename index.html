@@ -620,6 +620,21 @@
             footer .col-md-6 {
                 text-align: center !important;
             }
+
+            /* Fix for services CTA buttons on mobile */
+            .d-flex.flex-wrap.justify-content-center.gap-3 {
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 1rem !important;
+            }
+
+            .d-flex.flex-wrap.justify-content-center.gap-3 .btn {
+                width: 100% !important;
+                max-width: 280px !important;
+                margin-bottom: 10px !important;
+                padding: 12px 20px !important;
+                font-size: 0.95rem !important;
+            }
         }
 
         @media (max-width: 576px) {

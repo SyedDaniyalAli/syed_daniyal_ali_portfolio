@@ -447,6 +447,26 @@
             text-align: center;
         }
 
+        /* Fix email wrapping in About section */
+        #about p {
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        #about p span {
+            word-break: normal !important;
+            font-size: 0.85rem !important;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        /* Specific fix for email span */
+        #about p span[style*="word-break"] {
+            word-break: normal !important;
+            overflow-wrap: break-word !important;
+            hyphens: auto;
+        }
+
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
             .section {
@@ -877,7 +897,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <p><strong>Name:</strong> Syed Daniyal Ali</p>
-                            <p><strong>Email:</strong> <span style="word-break: break-all;">SyedDaniyalAli2222@gmail.com</span></p>
+                            <p><strong>Email:</strong> <a href="mailto:SyedDaniyalAli2222@gmail.com" class="text-info"><span style="word-break: break-all;">SyedDaniyalAli2222@gmail.com</span></a></p>
                             <p><strong>Phone:</strong> (+92) 332-2185988</p>
                         </div>
                         <div class="col-sm-6">

@@ -866,6 +866,47 @@
             transform: scale(1.05);
         }
 
+        /* Light theme button styles */
+        .light-theme .theme-toggle {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            color: #fff;
+            border: none;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3),
+                        0 0 0 0 rgba(59, 130, 246, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .light-theme .theme-toggle:hover {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5),
+                        0 0 0 10px rgba(59, 130, 246, 0.1),
+                        0 0 0 20px rgba(59, 130, 246, 0.05);
+        }
+
+        .light-theme .theme-toggle:focus {
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4);
+        }
+
+        .dark-theme .theme-toggle {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            color: #fff;
+            border: none;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3),
+                        0 0 0 0 rgba(99, 102, 241, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .dark-theme .theme-toggle:hover {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5),
+                        0 0 0 10px rgba(99, 102, 241, 0.1),
+                        0 0 0 20px rgba(99, 102, 241, 0.05);
+        }
+
+        .dark-theme .theme-toggle:focus {
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.4);
+        }
+
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-5px); }
@@ -873,53 +914,18 @@
 
         /* Enhanced Sun Icon */
         .sun-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #ffeb3b 0%, #ffc107 40%, #ff9800 100%);
-            position: relative;
-            animation: sunRotate 10s linear infinite, sunPulse 2s ease-in-out infinite alternate;
-            box-shadow: 0 0 25px rgba(255, 193, 7, 0.8),
-                        inset -3px -3px 8px rgba(255, 152, 0, 0.3),
-                        inset 3px 3px 8px rgba(255, 235, 59, 0.5);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            animation: sunRotate 20s linear infinite;
         }
 
         .sun-icon::before {
-            content: '';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 3px;
-            height: 10px;
-            background: linear-gradient(to bottom, #ffeb3b, #ffc107);
-            border-radius: 3px;
-            box-shadow:
-                0 24px 0 #ffeb3b,
-                8px 8px 0 #ffeb3b,
-                17px 17px 0 #ffeb3b,
-                24px 0 0 #ffeb3b,
-                17px -8px 0 #ffeb3b,
-                8px -8px 0 #ffeb3b,
-                -8px 8px 0 #ffeb3b,
-                -17px 17px 0 #ffeb3b,
-                -24px 0 0 #ffeb3b,
-                -17px -8px 0 #ffeb3b,
-                -8px -8px 0 #ffeb3b;
-            filter: drop-shadow(0 0 3px rgba(255, 193, 7, 0.6));
-        }
-
-        .sun-icon::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #fff9c4, #ffeb3b);
-            box-shadow: inset 0 0 8px rgba(255, 235, 59, 0.7);
+            content: '☀️';
+            display: block;
         }
 
         @keyframes sunRotate {
@@ -927,74 +933,25 @@
             100% { transform: rotate(360deg); }
         }
 
-        @keyframes sunPulse {
-            0% { box-shadow: 0 0 25px rgba(255, 193, 7, 0.6); }
-            100% { box-shadow: 0 0 35px rgba(255, 193, 7, 1); }
-        }
-
         /* Enhanced Moon Icon */
         .moon-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
-            position: relative;
-            animation: moonGlow 4s ease-in-out infinite alternate, moonFloat 6s ease-in-out infinite;
-            box-shadow: 0 0 20px rgba(144, 202, 249, 0.6),
-                        inset 2px 2px 6px rgba(255, 255, 255, 0.3),
-                        inset -2px -2px 6px rgba(144, 202, 249, 0.3);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            animation: moonFloat 6s ease-in-out infinite;
         }
 
         .moon-icon::before {
-            content: '';
-            position: absolute;
-            top: 4px;
-            left: 8px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #2196f3 0%, #1976d2 50%, #0d47a1 100%);
-            box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.2),
-                        inset -2px -2px 4px rgba(13, 71, 161, 0.3);
-        }
-
-        .moon-icon::after {
-            content: '';
-            position: absolute;
-            top: 2px;
-            right: 2px;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow:
-                -10px 4px 0 1px rgba(255, 255, 255, 0.7),
-                -8px 10px 0 rgba(255, 255, 255, 0.5),
-                -15px 8px 0 0.5px rgba(255, 255, 255, 0.4),
-                -6px 15px 0 0.5px rgba(255, 255, 255, 0.3);
-            animation: starTwinkle 3s ease-in-out infinite;
-        }
-
-        @keyframes moonGlow {
-            0% {
-                box-shadow: 0 0 20px rgba(144, 202, 249, 0.5),
-                           inset 2px 2px 6px rgba(255, 255, 255, 0.3);
-            }
-            100% {
-                box-shadow: 0 0 30px rgba(144, 202, 249, 0.9),
-                           inset 2px 2px 6px rgba(255, 255, 255, 0.5);
-            }
+            content: '🌙';
+            display: block;
         }
 
         @keyframes moonFloat {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-2px) rotate(1deg); }
-            66% { transform: translateY(1px) rotate(-1deg); }
-        }
-
-        @keyframes starTwinkle {
-            0%, 100% { opacity: 0.7; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.2); }
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-2px); }
         }
 
         /* Custom Scrollbar */
@@ -1707,8 +1664,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div    </section>
 
     <!-- Education Section -->
     <section id="education" class="section bg-dark text-white">
@@ -1775,8 +1731,7 @@
                         <h5 class="text-white">Location</h5>
                         <p class="text-light">Shamsi Society, Malir Halt, Karachi</p>
                     </div>
-                </div>
-            </div>
+                </div            </div>
             <div class="row mt-5">
                 <div class="col-lg-8 mx-auto">
                     <form class="card p-4" id="contactForm">

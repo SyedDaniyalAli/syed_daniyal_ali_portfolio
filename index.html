@@ -831,26 +831,227 @@
             top: 20px;
             right: 20px;
             z-index: 1050;
-            background: #3b82f6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border: none;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             color: white;
-            font-size: 20px;
+            font-size: 24px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5),
+                        0 0 0 0 rgba(102, 126, 234, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            animation: float 3s ease-in-out infinite;
         }
 
         .theme-toggle:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+            transform: scale(1.2) rotate(15deg);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.7),
+                        0 0 0 10px rgba(102, 126, 234, 0.1),
+                        0 0 0 20px rgba(102, 126, 234, 0.05);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
         }
 
         .theme-toggle:focus {
             outline: none;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.4);
+        }
+
+        .theme-toggle:active {
+            transform: scale(1.05);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Enhanced Sun Icon */
+        .sun-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #ffeb3b 0%, #ffc107 40%, #ff9800 100%);
+            position: relative;
+            animation: sunRotate 10s linear infinite, sunPulse 2s ease-in-out infinite alternate;
+            box-shadow: 0 0 25px rgba(255, 193, 7, 0.8),
+                        inset -3px -3px 8px rgba(255, 152, 0, 0.3),
+                        inset 3px 3px 8px rgba(255, 235, 59, 0.5);
+        }
+
+        .sun-icon::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 10px;
+            background: linear-gradient(to bottom, #ffeb3b, #ffc107);
+            border-radius: 3px;
+            box-shadow:
+                0 24px 0 #ffeb3b,
+                8px 8px 0 #ffeb3b,
+                17px 17px 0 #ffeb3b,
+                24px 0 0 #ffeb3b,
+                17px -8px 0 #ffeb3b,
+                8px -8px 0 #ffeb3b,
+                -8px 8px 0 #ffeb3b,
+                -17px 17px 0 #ffeb3b,
+                -24px 0 0 #ffeb3b,
+                -17px -8px 0 #ffeb3b,
+                -8px -8px 0 #ffeb3b;
+            filter: drop-shadow(0 0 3px rgba(255, 193, 7, 0.6));
+        }
+
+        .sun-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #fff9c4, #ffeb3b);
+            box-shadow: inset 0 0 8px rgba(255, 235, 59, 0.7);
+        }
+
+        @keyframes sunRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes sunPulse {
+            0% { box-shadow: 0 0 25px rgba(255, 193, 7, 0.6); }
+            100% { box-shadow: 0 0 35px rgba(255, 193, 7, 1); }
+        }
+
+        /* Enhanced Moon Icon */
+        .moon-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+            position: relative;
+            animation: moonGlow 4s ease-in-out infinite alternate, moonFloat 6s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(144, 202, 249, 0.6),
+                        inset 2px 2px 6px rgba(255, 255, 255, 0.3),
+                        inset -2px -2px 6px rgba(144, 202, 249, 0.3);
+        }
+
+        .moon-icon::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 8px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2196f3 0%, #1976d2 50%, #0d47a1 100%);
+            box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.2),
+                        inset -2px -2px 4px rgba(13, 71, 161, 0.3);
+        }
+
+        .moon-icon::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow:
+                -10px 4px 0 1px rgba(255, 255, 255, 0.7),
+                -8px 10px 0 rgba(255, 255, 255, 0.5),
+                -15px 8px 0 0.5px rgba(255, 255, 255, 0.4),
+                -6px 15px 0 0.5px rgba(255, 255, 255, 0.3);
+            animation: starTwinkle 3s ease-in-out infinite;
+        }
+
+        @keyframes moonGlow {
+            0% {
+                box-shadow: 0 0 20px rgba(144, 202, 249, 0.5),
+                           inset 2px 2px 6px rgba(255, 255, 255, 0.3);
+            }
+            100% {
+                box-shadow: 0 0 30px rgba(144, 202, 249, 0.9),
+                           inset 2px 2px 6px rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        @keyframes moonFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-2px) rotate(1deg); }
+            66% { transform: translateY(1px) rotate(-1deg); }
+        }
+
+        @keyframes starTwinkle {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Custom Scrollbar */
+        /* Webkit browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            border-radius: 10px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 50%, #3b82f6 100%);
+            border-radius: 10px;
+            border: 2px solid #0f172a;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #60a5fa 0%, #2563eb 50%, #60a5fa 100%);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.8);
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: linear-gradient(180deg, #1d4ed8 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: #0f172a;
+        }
+
+        /* Light theme scrollbar */
+        .light-theme ::-webkit-scrollbar-track {
+            background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 50%, #f8fafc 100%);
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .light-theme ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 50%, #3b82f6 100%);
+            border: 2px solid #f8fafc;
+        }
+
+        .light-theme ::-webkit-scrollbar-corner {
+            background: #f8fafc;
+        }
+
+        /* Firefox scrollbar */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #3b82f6 #0f172a;
+        }
+
+        .light-theme * {
+            scrollbar-color: #3b82f6 #f8fafc;
         }
 
         /* Light theme styles */
@@ -991,7 +1192,7 @@
 
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
-        <i class="fa fa-sun-o" id="themeIcon"></i>
+        <div class="sun-icon" id="themeIcon"></div>
     </button>
 
     <!-- Hero Section -->
@@ -1664,10 +1865,10 @@
             // Apply the saved theme
             if (currentTheme === 'light') {
                 body.classList.add('light-theme');
-                themeIcon.className = 'fa fa-moon-o';
+                themeIcon.className = 'moon-icon';
             } else {
                 body.classList.remove('light-theme');
-                themeIcon.className = 'fa fa-sun-o';
+                themeIcon.className = 'sun-icon';
             }
 
             // Theme toggle click handler
@@ -1675,12 +1876,12 @@
                 body.classList.toggle('light-theme');
 
                 if (body.classList.contains('light-theme')) {
-                    // Switch to light theme
-                    themeIcon.className = 'fa fa-moon-o';
+                    // Switch to light theme - show moon icon
+                    themeIcon.className = 'moon-icon';
                     localStorage.setItem('theme', 'light');
                 } else {
-                    // Switch to dark theme
-                    themeIcon.className = 'fa fa-sun-o';
+                    // Switch to dark theme - show sun icon
+                    themeIcon.className = 'sun-icon';
                     localStorage.setItem('theme', 'dark');
                 }
             });

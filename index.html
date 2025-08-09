@@ -124,6 +124,76 @@
         "Android Development",
         "iOS Development"
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Professional Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cross-Platform Mobile Development",
+              "description": "Build high-performance mobile apps that work seamlessly across iOS and Android platforms using Flutter. Single codebase, native performance, faster time-to-market."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Backend API Development",
+              "description": "Robust, scalable backend solutions with secure APIs, real-time databases, and cloud integration. Built for performance and reliability."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "UI/UX Design for Mobile Apps",
+              "description": "User-centered design that converts. Modern, intuitive interfaces that enhance user engagement and drive business results."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "App Performance Optimization",
+              "description": "Boost your app's speed and efficiency. Reduce load times, optimize memory usage, and ensure smooth performance across all devices."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "App Maintenance & Updates",
+              "description": "Keep your app running smoothly with regular updates, bug fixes, and feature enhancements. Ongoing support to ensure optimal performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Third-Party API Integration",
+              "description": "Seamlessly connect your app with external services. Payment gateways, social media, maps, analytics, and more to enhance functionality."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consulting & Code Review",
+              "description": "Expert guidance on architecture, best practices, and code quality. Comprehensive reviews to improve performance and maintainability."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "MVP Development for Startups",
+              "description": "Bring your startup idea to life quickly and cost-effectively. Build, test, and iterate with a Minimum Viable Product that validates your concept."
+            }
+          }
+        ]
+      },
       "sameAs": [
         "https://www.facebook.com/syeddaniyalali30",
         "https://twitter.com/daniyalchatting",
@@ -338,6 +408,31 @@
             clip: rect(0, 0, 0, 0) !important;
             white-space: nowrap !important;
             border: 0 !important;
+        }
+
+        /* Services Section Specific Styles */
+        .services-icon {
+            margin-right: 15px !important;
+        }
+
+        .services-card .d-flex {
+            margin-bottom: 20px;
+        }
+
+        .services-card h5 {
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .services-card .list-unstyled li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+        }
+
+        .services-card .list-unstyled li i {
+            margin-right: 10px !important;
+            width: 16px;
+            text-align: center;
         }
 
         /* Mobile Responsive Styles */
@@ -695,6 +790,7 @@
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -895,6 +991,169 @@
                     <div class="card h-100 p-4">
                         <h5 class="text-warning">Soft Skills</h5>
                         <p class="text-light">Problem-Solving, Time Management, Leadership, Sprint Planning, Collaboration, Critical Thinking, Adaptability</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-black text-white">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Professional Services</h2>
+                <p class="text-light">Comprehensive mobile and web development solutions tailored to your business needs</p>
+            </div>
+            <div class="row">
+                <!-- Cross-platform Mobile Development -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-mobile fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">Cross-Platform Mobile Development</h5>
+                        </div>
+                        <p class="text-light mb-3">Build high-performance mobile apps that work seamlessly across iOS and Android platforms using Flutter. Single codebase, native performance, faster time-to-market.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Flutter app development</li>
+                            <li><i class="fa fa-check text-warning"></i>Native iOS & Android features</li>
+                            <li><i class="fa fa-check text-warning"></i>Custom UI/UX implementation</li>
+                            <li><i class="fa fa-check text-warning"></i>App store deployment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Backend API Development -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-server fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">Backend API Development</h5>
+                        </div>
+                        <p class="text-light mb-3">Robust, scalable backend solutions with secure APIs, real-time databases, and cloud integration. Built for performance and reliability.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>RESTful API development</li>
+                            <li><i class="fa fa-check text-warning"></i>Firebase & Firestore integration</li>
+                            <li><i class="fa fa-check text-warning"></i>Node.js & Python backends</li>
+                            <li><i class="fa fa-check text-warning"></i>Database design & optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design for Mobile Apps -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-paint-brush fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">UI/UX Design for Mobile Apps</h5>
+                        </div>
+                        <p class="text-light mb-3">User-centered design that converts. Modern, intuitive interfaces that enhance user engagement and drive business results.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Custom mobile UI design</li>
+                            <li><i class="fa fa-check text-warning"></i>User experience optimization</li>
+                            <li><i class="fa fa-check text-warning"></i>Interactive prototypes</li>
+                            <li><i class="fa fa-check text-warning"></i>Material Design & Cupertino</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- App Performance Optimization -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-tachometer fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">App Performance Optimization</h5>
+                        </div>
+                        <p class="text-light mb-3">Boost your app's speed and efficiency. Reduce load times, optimize memory usage, and ensure smooth performance across all devices.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Performance analysis & tuning</li>
+                            <li><i class="fa fa-check text-warning"></i>Memory optimization</li>
+                            <li><i class="fa fa-check text-warning"></i>Image caching & lazy loading</li>
+                            <li><i class="fa fa-check text-warning"></i>Battery usage optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- App Maintenance & Updates -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-wrench fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">App Maintenance & Updates</h5>
+                        </div>
+                        <p class="text-light mb-3">Keep your app running smoothly with regular updates, bug fixes, and feature enhancements. Ongoing support to ensure optimal performance.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Regular security updates</li>
+                            <li><i class="fa fa-check text-warning"></i>Bug fixes & improvements</li>
+                            <li><i class="fa fa-check text-warning"></i>OS compatibility updates</li>
+                            <li><i class="fa fa-check text-warning"></i>Feature additions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Third-party API Integration -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-plug fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">Third-Party API Integration</h5>
+                        </div>
+                        <p class="text-light mb-3">Seamlessly connect your app with external services. Payment gateways, social media, maps, analytics, and more to enhance functionality.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Payment gateway integration</li>
+                            <li><i class="fa fa-check text-warning"></i>Social media APIs</li>
+                            <li><i class="fa fa-check text-warning"></i>Google Maps & location services</li>
+                            <li><i class="fa fa-check text-warning"></i>Analytics & monitoring tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Consulting & Code Review -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-search fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">Consulting & Code Review</h5>
+                        </div>
+                        <p class="text-light mb-3">Expert guidance on architecture, best practices, and code quality. Comprehensive reviews to improve performance and maintainability.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Architecture consulting</li>
+                            <li><i class="fa fa-check text-warning"></i>Code quality assessment</li>
+                            <li><i class="fa fa-check text-warning"></i>Best practices implementation</li>
+                            <li><i class="fa fa-check text-warning"></i>Team mentoring & training</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MVP Development for Startups -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card services-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-rocket fa-2x text-warning services-icon"></i>
+                            <h5 class="text-warning mb-0">MVP Development for Startups</h5>
+                        </div>
+                        <p class="text-light mb-3">Bring your startup idea to life quickly and cost-effectively. Build, test, and iterate with a Minimum Viable Product that validates your concept.</p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fa fa-check text-warning"></i>Rapid prototyping</li>
+                            <li><i class="fa fa-check text-warning"></i>Core feature development</li>
+                            <li><i class="fa fa-check text-warning"></i>User feedback integration</li>
+                            <li><i class="fa fa-check text-warning"></i>Scalable foundation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="card p-5">
+                        <h3 class="text-warning mb-3">Ready to Start Your Project?</h3>
+                        <p class="text-light mb-4">Let's discuss how I can help bring your mobile app vision to life. From concept to deployment, I'll guide you through every step of the development process.</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="#contact" class="btn btn-primary btn-lg">Get Free Consultation</a>
+                            <a href="https://wa.me/923322185988?text=Hi! I'm interested in discussing a mobile app project." target="_blank" class="btn btn-outline-light btn-lg">
+                                <i class="fa fa-whatsapp me-2"></i>WhatsApp Chat
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
